@@ -101,7 +101,6 @@ export default function Commissioner() {
     }
   }
 
-  // Drag-and-drop handler
   function handleDrop(player: Player, team: Team) {
     setDropTarget({ player, team });
   }
@@ -115,7 +114,6 @@ export default function Commissioner() {
     });
   }
 
-  // Voice control handler
   function handleVoiceConfirm(playerId: number, teamId: number, bidAmount: number) {
     pickMutation.mutate({ playerId, teamId, bidAmount });
   }
@@ -127,51 +125,41 @@ export default function Commissioner() {
   const selectedTeam = data.teams.find(t => t.id === selectedTeamId);
 
   return (
-    <div className="px-4 py-6">
-      {/* Voice Control */}
-      <VoiceControl
-        players={data.availablePlayers}
-        teams={data.teams}
-        onConfirm={handleVoiceConfirm}
-      />
+    <div className="px-4 py-4">
+      {/* Compact Commissioner Control Panel */}
+      <div className="bg-slate-800 rounded-lg p-3 mb-4 border border-slate-700">
+        <form onSubmit={handleDraft}>
+          <div className="flex items-end gap-3 flex-wrap">
+            {/* Player search */}
+            <div className="flex-1 min-w-[200px]">
+              <label className="block text-xs text-slate-400 mb-1">Player</label>
+              <PlayerSearch
+                selectedPlayer={selectedPlayer}
+                onSelect={setSelectedPlayer}
+                onClear={() => setSelectedPlayer(null)}
+              />
+            </div>
 
-      {/* Commissioner Control Panel */}
-      <div className="bg-slate-800 rounded-xl p-6 mb-6 border border-slate-700">
-        <h2 className="text-2xl font-bold text-white mb-5">Commissioner Panel</h2>
-
-        <form onSubmit={handleDraft} className="space-y-4">
-          <div>
-            <label className="block text-lg text-slate-400 mb-2">Player</label>
-            <PlayerSearch
-              selectedPlayer={selectedPlayer}
-              onSelect={setSelectedPlayer}
-              onClear={() => setSelectedPlayer(null)}
-            />
-          </div>
-
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label className="block text-lg text-slate-400 mb-2">Team</label>
+            {/* Team select */}
+            <div className="w-64">
+              <label className="block text-xs text-slate-400 mb-1">Team</label>
               <select
                 value={selectedTeamId}
                 onChange={e => setSelectedTeamId(Number(e.target.value))}
-                className="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-lg text-lg text-white focus:outline-none focus:border-blue-500"
+                className="w-full px-3 py-2 bg-slate-900 border border-slate-600 rounded text-sm text-white focus:outline-none focus:border-blue-500"
               >
                 {data.teams.map(team => (
                   <option key={team.id} value={team.id}>
-                    {team.name} — Max Bid: ${getMaxBid(team)} ({team.picks.length}/{ROSTER_SIZE})
+                    {team.name} — Max: ${getMaxBid(team)} ({team.picks.length}/{ROSTER_SIZE})
                   </option>
                 ))}
               </select>
             </div>
-            <div>
-              <label className="block text-lg text-slate-400 mb-2">
-                Bid Amount ($)
-                {selectedTeam && (
-                  <span className="text-yellow-400 ml-2">
-                    Max: ${getMaxBid(selectedTeam)}
-                  </span>
-                )}
+
+            {/* Bid amount */}
+            <div className="w-32">
+              <label className="block text-xs text-slate-400 mb-1">
+                Bid {selectedTeam && <span className="text-yellow-400">(max ${getMaxBid(selectedTeam)})</span>}
               </label>
               <input
                 type="number"
@@ -179,42 +167,67 @@ export default function Commissioner() {
                 max={selectedTeam ? getMaxBid(selectedTeam) : undefined}
                 value={bidAmount}
                 onChange={e => setBidAmount(e.target.value)}
-                placeholder="0"
-                className="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-lg text-lg text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
+                placeholder="$"
+                className="w-full px-3 py-2 bg-slate-900 border border-slate-600 rounded text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
               />
             </div>
-          </div>
 
-          {error && (
-            <div className="text-red-400 text-lg bg-red-400/10 border border-red-400/20 rounded-lg px-4 py-3">
-              {error}
-            </div>
-          )}
-
-          <div className="flex gap-3">
+            {/* Buttons */}
             <button
               type="submit"
               disabled={pickMutation.isPending}
-              className="flex-1 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-800 disabled:text-blue-400 text-white text-xl font-bold py-3 px-6 rounded-lg transition-colors"
+              className="bg-blue-600 hover:bg-blue-700 disabled:bg-blue-800 disabled:text-blue-400 text-white font-bold py-2 px-5 rounded transition-colors"
             >
-              {pickMutation.isPending ? 'Drafting...' : 'Draft Player'}
+              {pickMutation.isPending ? 'Drafting...' : 'Draft'}
             </button>
             <button
               type="button"
               onClick={handleUndo}
               disabled={data.picks.length === 0}
-              className="bg-amber-600 hover:bg-amber-700 disabled:bg-slate-700 disabled:text-slate-500 text-white text-xl font-bold py-3 px-6 rounded-lg transition-colors"
+              className="bg-amber-600 hover:bg-amber-700 disabled:bg-slate-700 disabled:text-slate-500 text-white font-bold py-2 px-4 rounded transition-colors"
             >
               Undo
             </button>
+
+            {/* Voice button — inline */}
+            <VoiceControl
+              players={data.availablePlayers}
+              teams={data.teams}
+              onConfirm={handleVoiceConfirm}
+            />
           </div>
+
+          {error && (
+            <div className="text-red-400 text-sm bg-red-400/10 border border-red-400/20 rounded px-3 py-2 mt-2">
+              {error}
+            </div>
+          )}
         </form>
       </div>
 
-      {/* Team Name Editor */}
-      <div className="bg-slate-800 rounded-xl p-5 mb-6 border border-slate-700">
-        <h3 className="text-lg font-semibold text-slate-400 mb-3">Team Names (click to edit)</h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+      {/* Draft Board — BIG */}
+      <div className="flex items-center justify-between mb-5">
+        <h2 className="text-2xl font-bold text-white">Draft Board</h2>
+        <div className="flex items-center gap-4">
+          <span className="text-lg text-slate-400">
+            {data.picks.length} picks · {data.availablePlayers.length} available
+          </span>
+          <button
+            onClick={handleReset}
+            className="text-sm text-red-400 hover:text-red-300 transition-colors"
+          >
+            Reset Draft
+          </button>
+        </div>
+      </div>
+
+      <TeamGrid teams={data.teams} onDrop={handleDrop} />
+      <PlayerPool players={data.availablePlayers} draggable />
+
+      {/* Team Name Editor — at the bottom */}
+      <div className="bg-slate-800 rounded-lg p-4 mt-6 border border-slate-700">
+        <h3 className="text-sm font-semibold text-slate-400 mb-3">Team Names (click to edit)</h3>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
           {data.teams.map(team => (
             <div key={team.id}>
               {editingTeam === team.id ? (
@@ -236,7 +249,7 @@ export default function Commissioner() {
                       setEditingTeam(null);
                     }
                   }}
-                  className="w-full px-3 py-2 bg-slate-900 border border-blue-500 rounded-lg text-white text-lg focus:outline-none"
+                  className="w-full px-2 py-1 bg-slate-900 border border-blue-500 rounded text-white text-sm focus:outline-none"
                 />
               ) : (
                 <button
@@ -244,7 +257,7 @@ export default function Commissioner() {
                     setEditingTeam(team.id);
                     setEditName(team.name);
                   }}
-                  className="w-full text-left px-3 py-2 text-lg text-slate-300 hover:text-white hover:bg-slate-700 rounded-lg transition-colors"
+                  className="w-full text-left px-2 py-1 text-sm text-slate-300 hover:text-white hover:bg-slate-700 rounded transition-colors"
                 >
                   {team.name}
                 </button>
@@ -253,25 +266,6 @@ export default function Commissioner() {
           ))}
         </div>
       </div>
-
-      {/* Draft Board — drop targets enabled */}
-      <div className="flex items-center justify-between mb-5">
-        <h2 className="text-2xl font-bold text-white">Draft Board</h2>
-        <div className="flex items-center gap-4">
-          <span className="text-lg text-slate-400">
-            {data.picks.length} picks · {data.availablePlayers.length} available
-          </span>
-          <button
-            onClick={handleReset}
-            className="text-base text-red-400 hover:text-red-300 transition-colors"
-          >
-            Reset Draft
-          </button>
-        </div>
-      </div>
-
-      <TeamGrid teams={data.teams} onDrop={handleDrop} />
-      <PlayerPool players={data.availablePlayers} draggable />
 
       {/* Bid Modal for drag-and-drop */}
       {dropTarget && (

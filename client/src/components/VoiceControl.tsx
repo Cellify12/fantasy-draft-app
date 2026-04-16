@@ -262,10 +262,29 @@ export default function VoiceControl({ players, teams, onConfirm }: VoiceControl
     return null; // Don't show voice control if unsupported
   }
 
+  const hasContent = isListening || transcript || parsed || error;
+
+  // Inline button only — no wrapper div
+  if (!hasContent) {
+    return (
+      <button
+        onClick={startListening}
+        className="flex items-center gap-1.5 bg-slate-700 hover:bg-slate-600 text-slate-300 py-2 px-3 rounded transition-colors"
+        title="Voice draft: say 'Player sold to Team for Amount'"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm-1-9c0-.55.45-1 1-1s1 .45 1 1v6c0 .55-.45 1-1 1s-1-.45-1-1V5z"/>
+          <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+        </svg>
+        Voice
+      </button>
+    );
+  }
+
+  // Expanded voice panel — shown as a floating overlay below the control bar
   return (
-    <div className="bg-slate-800 rounded-lg p-4 mb-6 border border-slate-700">
-      <div className="flex items-center justify-between mb-3">
-        <h3 className="text-sm font-semibold text-slate-400">Voice Control</h3>
+    <div className="fixed top-16 left-1/2 -translate-x-1/2 z-50 bg-slate-800 border border-slate-600 rounded-lg shadow-2xl p-4 w-[500px] max-w-[90vw]">
+      <div className="flex items-center justify-between mb-2">
         <button
           onClick={isListening ? stopListening : startListening}
           className={`flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
@@ -278,89 +297,65 @@ export default function VoiceControl({ players, teams, onConfirm }: VoiceControl
             <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm-1-9c0-.55.45-1 1-1s1 .45 1 1v6c0 .55-.45 1-1 1s-1-.45-1-1V5z"/>
             <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
           </svg>
-          {isListening ? 'Listening...' : 'Start Voice'}
+          {isListening ? 'Listening...' : 'Start'}
+        </button>
+        <button
+          onClick={() => { stopListening(); handleClear(); }}
+          className="text-slate-400 hover:text-white text-sm"
+        >
+          Close
         </button>
       </div>
 
-      {isListening && (
-        <p className="text-xs text-slate-500 mb-2">
-          Say: "<span className="text-slate-400">Player name</span> sold to <span className="text-slate-400">team name</span> for <span className="text-slate-400">amount</span>"
+      {isListening && !transcript && (
+        <p className="text-xs text-slate-500">
+          Say: "Player name sold to team name for amount"
         </p>
       )}
 
-      {error && (
-        <div className="text-red-400 text-sm mb-2">{error}</div>
-      )}
+      {error && <div className="text-red-400 text-sm">{error}</div>}
 
       {transcript && (
-        <div className="bg-slate-900 rounded px-3 py-2 mb-3">
-          <div className="text-xs text-slate-500 mb-1">Heard:</div>
-          <div className="text-white text-sm">"{transcript}"</div>
+        <div className="bg-slate-900 rounded px-3 py-2 mb-2">
+          <span className="text-xs text-slate-500">Heard: </span>
+          <span className="text-white text-sm">"{transcript}"</span>
         </div>
       )}
 
       {parsed && (
-        <div className="bg-slate-900 rounded px-3 py-2 mb-3 space-y-2">
-          <div className="text-xs text-slate-500">Parsed:</div>
-
+        <div className="bg-slate-900 rounded px-3 py-2 space-y-1">
           <div className="flex items-center gap-2 text-sm">
             <span className="text-slate-500">Player:</span>
             {parsed.player ? (
               <span className="text-white font-medium">
                 {parsed.player.name}
-                <span className="text-slate-400 text-xs ml-1">
-                  ({parsed.player.position}, {parsed.player.teamAbbr})
-                </span>
+                <span className="text-slate-400 text-xs ml-1">({parsed.player.position}, {parsed.player.teamAbbr})</span>
               </span>
             ) : parsed.playerCandidates ? (
               <div className="flex flex-wrap gap-1">
                 {parsed.playerCandidates.map(p => (
-                  <button
-                    key={p.id}
-                    onClick={() => selectCandidate(p)}
+                  <button key={p.id} onClick={() => selectCandidate(p)}
                     className="px-2 py-0.5 bg-slate-700 hover:bg-blue-600 rounded text-xs text-white transition-colors"
-                  >
-                    {p.name}
-                  </button>
+                  >{p.name}</button>
                 ))}
               </div>
-            ) : (
-              <span className="text-red-400">Not found</span>
-            )}
+            ) : <span className="text-red-400">Not found</span>}
           </div>
-
           <div className="flex items-center gap-2 text-sm">
             <span className="text-slate-500">Team:</span>
-            {parsed.team ? (
-              <span className="text-blue-400 font-medium">{parsed.team.name}</span>
-            ) : (
-              <span className="text-red-400">Not found</span>
-            )}
+            {parsed.team ? <span className="text-blue-400 font-medium">{parsed.team.name}</span> : <span className="text-red-400">Not found</span>}
           </div>
-
           <div className="flex items-center gap-2 text-sm">
             <span className="text-slate-500">Amount:</span>
-            {parsed.amount ? (
-              <span className="text-emerald-400 font-mono">${parsed.amount}</span>
-            ) : (
-              <span className="text-red-400">Not found</span>
-            )}
+            {parsed.amount ? <span className="text-emerald-400 font-mono">${parsed.amount}</span> : <span className="text-red-400">Not found</span>}
           </div>
-
-          <div className="flex gap-2 pt-1">
-            <button
-              onClick={handleConfirm}
-              disabled={!parsed.player || !parsed.team || !parsed.amount}
+          <div className="flex gap-2 pt-2">
+            <button onClick={handleConfirm} disabled={!parsed.player || !parsed.team || !parsed.amount}
               className="flex-1 bg-emerald-600 hover:bg-emerald-700 disabled:bg-slate-700 disabled:text-slate-500 text-white font-medium py-1.5 px-3 rounded text-sm transition-colors"
-            >
-              Confirm Draft
-            </button>
-            <button
-              onClick={handleClear}
+            >Confirm Draft</button>
+            <button onClick={handleClear}
               className="px-3 py-1.5 text-slate-400 hover:text-white hover:bg-slate-700 rounded text-sm transition-colors"
-            >
-              Clear
-            </button>
+            >Clear</button>
           </div>
         </div>
       )}
