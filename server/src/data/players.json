@@ -1,336 +1,2340 @@
 [
-  {"name": "Shai Gilgeous-Alexander", "teamAbbr": "OKC", "position": "G", "seed": null},
-  {"name": "Cade Cunningham", "teamAbbr": "DET", "position": "G", "seed": null},
-  {"name": "Victor Wembanyama", "teamAbbr": "SAS", "position": "F", "seed": null},
-  {"name": "Jaylen Brown", "teamAbbr": "BOS", "position": "G", "seed": null},
-  {"name": "Nikola Jokić", "teamAbbr": "DEN", "position": "C", "seed": null},
-  {"name": "Jayson Tatum", "teamAbbr": "BOS", "position": "F", "seed": null},
-  {"name": "Jalen Duren", "teamAbbr": "DET", "position": "C", "seed": null},
-  {"name": "Luka Dončić", "teamAbbr": "LAL", "position": "F", "seed": null},
-  {"name": "Chet Holmgren", "teamAbbr": "OKC", "position": "C", "seed": null},
-  {"name": "Stephon Castle", "teamAbbr": "SAS", "position": "G", "seed": null},
-  {"name": "De'Aaron Fox", "teamAbbr": "SAS", "position": "G", "seed": null},
-  {"name": "Jamal Murray", "teamAbbr": "DEN", "position": "G", "seed": null},
-  {"name": "Jalen Williams", "teamAbbr": "OKC", "position": "G", "seed": null},
-  {"name": "Derrick White", "teamAbbr": "BOS", "position": "G", "seed": null},
-  {"name": "Jalen Brunson", "teamAbbr": "NYK", "position": "G", "seed": null},
-  {"name": "Payton Pritchard", "teamAbbr": "BOS", "position": "G", "seed": null},
-  {"name": "Karl-Anthony Towns", "teamAbbr": "NYK", "position": "C", "seed": null},
-  {"name": "Donovan Mitchell", "teamAbbr": "CLE", "position": "G", "seed": null},
-  {"name": "Tobias Harris", "teamAbbr": "DET", "position": "F", "seed": null},
-  {"name": "Kevin Durant", "teamAbbr": "HOU", "position": "F", "seed": null},
-  {"name": "Isaiah Hartenstein", "teamAbbr": "OKC", "position": "C", "seed": null},
-  {"name": "LeBron James", "teamAbbr": "LAL", "position": "F", "seed": null},
-  {"name": "Ajay Mitchell", "teamAbbr": "OKC", "position": "G", "seed": null},
-  {"name": "James Harden", "teamAbbr": "CLE", "position": "G", "seed": null},
-  {"name": "Devin Vassell", "teamAbbr": "SAS", "position": "G", "seed": null},
-  {"name": "Jalen Johnson", "teamAbbr": "ATL", "position": "F", "seed": null},
-  {"name": "Ausar Thompson", "teamAbbr": "DET", "position": "G", "seed": null},
-  {"name": "Alperen Sengun", "teamAbbr": "HOU", "position": "C", "seed": null},
-  {"name": "Duncan Robinson", "teamAbbr": "DET", "position": "F", "seed": null},
-  {"name": "Julian Champagnie", "teamAbbr": "SAS", "position": "F", "seed": null},
-  {"name": "OG Anunoby", "teamAbbr": "NYK", "position": "F", "seed": null},
-  {"name": "Anthony Edwards", "teamAbbr": "MIN", "position": "G", "seed": null},
-  {"name": "Keldon Johnson", "teamAbbr": "SAS", "position": "F", "seed": null},
-  {"name": "Scottie Barnes", "teamAbbr": "TOR", "position": "F", "seed": null},
-  {"name": "Austin Reaves", "teamAbbr": "LAL", "position": "G", "seed": null},
-  {"name": "Evan Mobley", "teamAbbr": "CLE", "position": "C", "seed": null},
-  {"name": "Neemias Queta", "teamAbbr": "BOS", "position": "C", "seed": null},
-  {"name": "Brandon Ingram", "teamAbbr": "TOR", "position": "F", "seed": null},
-  {"name": "Aaron Gordon", "teamAbbr": "DEN", "position": "F", "seed": null},
-  {"name": "Dylan Harper", "teamAbbr": "SAS", "position": "G", "seed": null},
-  {"name": "Amen Thompson", "teamAbbr": "HOU", "position": "G", "seed": null},
-  {"name": "Isaiah Stewart", "teamAbbr": "DET", "position": "F", "seed": null},
-  {"name": "Josh Hart", "teamAbbr": "NYK", "position": "G", "seed": null},
-  {"name": "Nikola Vučević", "teamAbbr": "BOS", "position": "C", "seed": null},
-  {"name": "Jaylin Williams", "teamAbbr": "OKC", "position": "F", "seed": null},
-  {"name": "Mikal Bridges", "teamAbbr": "NYK", "position": "G", "seed": null},
-  {"name": "RJ Barrett", "teamAbbr": "TOR", "position": "F", "seed": null},
-  {"name": "Isaiah Joe", "teamAbbr": "OKC", "position": "G", "seed": null},
-  {"name": "Julius Randle", "teamAbbr": "MIN", "position": "F", "seed": null},
-  {"name": "Cason Wallace", "teamAbbr": "OKC", "position": "G", "seed": null},
-  {"name": "Peyton Watson", "teamAbbr": "DEN", "position": "G", "seed": null},
-  {"name": "Daniss Jenkins", "teamAbbr": "DET", "position": "G", "seed": null},
-  {"name": "Immanuel Quickley", "teamAbbr": "TOR", "position": "G", "seed": null},
-  {"name": "Sam Hauser", "teamAbbr": "BOS", "position": "F", "seed": null},
-  {"name": "Jabari Smith", "teamAbbr": "HOU", "position": "F", "seed": null},
-  {"name": "Aaron Wiggins", "teamAbbr": "OKC", "position": "G", "seed": null},
-  {"name": "Harrison Barnes", "teamAbbr": "SAS", "position": "F", "seed": null},
-  {"name": "Kevin Huerter", "teamAbbr": "DET", "position": "G", "seed": null},
-  {"name": "Ronald Holland", "teamAbbr": "DET", "position": "F", "seed": null},
-  {"name": "Jarrett Allen", "teamAbbr": "CLE", "position": "C", "seed": null},
-  {"name": "Luguentz Dort", "teamAbbr": "OKC", "position": "G", "seed": null},
-  {"name": "Paul Reed", "teamAbbr": "DET", "position": "F", "seed": null},
-  {"name": "Cameron Johnson", "teamAbbr": "DEN", "position": "F", "seed": null},
-  {"name": "Nickeil Alexander-Walker", "teamAbbr": "ATL", "position": "G", "seed": null},
-  {"name": "Jared McCain", "teamAbbr": "OKC", "position": "G", "seed": null},
-  {"name": "Onyeka Okongwu", "teamAbbr": "ATL", "position": "F", "seed": null},
-  {"name": "Christian Braun", "teamAbbr": "DEN", "position": "G", "seed": null},
-  {"name": "Tim Hardaway", "teamAbbr": "DEN", "position": "G", "seed": null},
-  {"name": "Miles McBride", "teamAbbr": "NYK", "position": "G", "seed": null},
-  {"name": "CJ McCollum", "teamAbbr": "ATL", "position": "G", "seed": null},
-  {"name": "Jaylon Tyson", "teamAbbr": "CLE", "position": "G", "seed": null},
-  {"name": "Caris LeVert", "teamAbbr": "DET", "position": "G", "seed": null},
-  {"name": "Luke Kornet", "teamAbbr": "SAS", "position": "C", "seed": null},
-  {"name": "Reed Sheppard", "teamAbbr": "HOU", "position": "G", "seed": null},
-  {"name": "Deni Avdija", "teamAbbr": "POR", "position": "F", "seed": null},
-  {"name": "Kawhi Leonard", "teamAbbr": "LAC", "position": "F", "seed": null},
-  {"name": "Tyrese Maxey", "teamAbbr": "PHI", "position": "G", "seed": null},
-  {"name": "Alex Caruso", "teamAbbr": "OKC", "position": "G", "seed": null},
-  {"name": "Deandre Ayton", "teamAbbr": "LAL", "position": "C", "seed": null},
-  {"name": "Dyson Daniels", "teamAbbr": "ATL", "position": "G", "seed": null},
-  {"name": "Luka Garza", "teamAbbr": "BOS", "position": "C", "seed": null},
-  {"name": "Paolo Banchero", "teamAbbr": "ORL", "position": "F", "seed": null},
-  {"name": "Sam Merrill", "teamAbbr": "CLE", "position": "G", "seed": null},
-  {"name": "Javonte Green", "teamAbbr": "DET", "position": "G", "seed": null},
-  {"name": "Jaden McDaniels", "teamAbbr": "MIN", "position": "F", "seed": null},
-  {"name": "Tari Eason", "teamAbbr": "HOU", "position": "F", "seed": null},
-  {"name": "Kenrich Williams", "teamAbbr": "OKC", "position": "G", "seed": null},
-  {"name": "Devin Booker", "teamAbbr": "PHO", "position": "G", "seed": null},
-  {"name": "Sandro Mamukelashvili", "teamAbbr": "TOR", "position": "F", "seed": null},
-  {"name": "Rudy Gobert", "teamAbbr": "MIN", "position": "C", "seed": null},
-  {"name": "Stephen Curry", "teamAbbr": "GSW", "position": "G", "seed": null},
-  {"name": "Naz Reid", "teamAbbr": "MIN", "position": "C", "seed": null},
-  {"name": "Joel Embiid", "teamAbbr": "PHI", "position": "C", "seed": null},
-  {"name": "Donte DiVincenzo", "teamAbbr": "MIN", "position": "G", "seed": null},
-  {"name": "Ayo Dosunmu", "teamAbbr": "MIN", "position": "G", "seed": null},
-  {"name": "Mitchell Robinson", "teamAbbr": "NYK", "position": "C", "seed": null},
-  {"name": "Jakob Poeltl", "teamAbbr": "TOR", "position": "C", "seed": null},
-  {"name": "Rui Hachimura", "teamAbbr": "LAL", "position": "F", "seed": null},
-  {"name": "Baylor Scheierman", "teamAbbr": "BOS", "position": "G", "seed": null},
-  {"name": "Jonathan Kuminga", "teamAbbr": "ATL", "position": "F", "seed": null},
-  {"name": "LaMelo Ball", "teamAbbr": "CHA", "position": "G", "seed": null},
-  {"name": "Bruce Brown", "teamAbbr": "DEN", "position": "G", "seed": null},
-  {"name": "Marcus Smart", "teamAbbr": "LAL", "position": "G", "seed": null},
-  {"name": "Jordan Walsh", "teamAbbr": "BOS", "position": "G", "seed": null},
-  {"name": "Franz Wagner", "teamAbbr": "ORL", "position": "F", "seed": null},
-  {"name": "Landry Shamet", "teamAbbr": "NYK", "position": "G", "seed": null},
-  {"name": "Jonas Valančiūnas", "teamAbbr": "DEN", "position": "C", "seed": null},
-  {"name": "Jake LaRavia", "teamAbbr": "LAL", "position": "F", "seed": null},
-  {"name": "Brandon Miller", "teamAbbr": "CHA", "position": "F", "seed": null},
-  {"name": "Collin Murray-Boyles", "teamAbbr": "TOR", "position": "F", "seed": null},
-  {"name": "Jimmy Butler", "teamAbbr": "GSW", "position": "F", "seed": null},
-  {"name": "Branden Carlson", "teamAbbr": "OKC", "position": "C", "seed": null},
-  {"name": "Jose Alvarado", "teamAbbr": "NYK", "position": "G", "seed": null},
-  {"name": "Desmond Bane", "teamAbbr": "ORL", "position": "G", "seed": null},
-  {"name": "Shaedon Sharpe", "teamAbbr": "POR", "position": "G", "seed": null},
-  {"name": "Darius Garland", "teamAbbr": "LAC", "position": "G", "seed": null},
-  {"name": "Paul George", "teamAbbr": "PHI", "position": "F", "seed": null},
-  {"name": "Jrue Holiday", "teamAbbr": "POR", "position": "G", "seed": null},
-  {"name": "Marcus Sasser", "teamAbbr": "DET", "position": "G", "seed": null},
-  {"name": "Dennis Schröder", "teamAbbr": "CLE", "position": "G", "seed": null},
-  {"name": "Luke Kennard", "teamAbbr": "LAL", "position": "G", "seed": null},
-  {"name": "Keon Ellis", "teamAbbr": "CLE", "position": "G", "seed": null},
-  {"name": "Jerami Grant", "teamAbbr": "POR", "position": "F", "seed": null},
-  {"name": "Kon Knueppel", "teamAbbr": "CHA", "position": "G", "seed": null},
-  {"name": "Steven Adams", "teamAbbr": "HOU", "position": "C", "seed": null},
-  {"name": "Miles Bridges", "teamAbbr": "CHA", "position": "F", "seed": null},
-  {"name": "Dillon Brooks", "teamAbbr": "PHO", "position": "G", "seed": null},
-  {"name": "Jordan Clarkson", "teamAbbr": "NYK", "position": "G", "seed": null},
-  {"name": "Jamal Shead", "teamAbbr": "TOR", "position": "G", "seed": null},
-  {"name": "Donovan Clingan", "teamAbbr": "POR", "position": "C", "seed": null},
-  {"name": "Grayson Allen", "teamAbbr": "PHO", "position": "G", "seed": null},
-  {"name": "Zaccharie Risacher", "teamAbbr": "ATL", "position": "F", "seed": null},
-  {"name": "VJ Edgecombe", "teamAbbr": "PHI", "position": "G", "seed": null},
-  {"name": "Jalen Suggs", "teamAbbr": "ORL", "position": "G", "seed": null},
-  {"name": "Dean Wade", "teamAbbr": "CLE", "position": "F", "seed": null},
-  {"name": "Jalen Green", "teamAbbr": "PHO", "position": "G", "seed": null},
-  {"name": "Spencer Jones", "teamAbbr": "DEN", "position": "F", "seed": null},
-  {"name": "Toumani Camara", "teamAbbr": "POR", "position": "F", "seed": null},
-  {"name": "Carter Bryant", "teamAbbr": "SAS", "position": "F", "seed": null},
-  {"name": "Hugo González", "teamAbbr": "BOS", "position": "G", "seed": null},
-  {"name": "Anthony Black", "teamAbbr": "ORL", "position": "G", "seed": null},
-  {"name": "Julian Strawther", "teamAbbr": "DEN", "position": "G", "seed": null},
-  {"name": "Collin Gillespie", "teamAbbr": "PHO", "position": "G", "seed": null},
-  {"name": "Bennedict Mathurin", "teamAbbr": "LAC", "position": "G", "seed": null},
-  {"name": "Jaxson Hayes", "teamAbbr": "LAL", "position": "C", "seed": null},
-  {"name": "Ja'Kobe Walter", "teamAbbr": "TOR", "position": "G", "seed": null},
-  {"name": "Jock Landale", "teamAbbr": "ATL", "position": "C", "seed": null},
-  {"name": "Craig Porter", "teamAbbr": "CLE", "position": "G", "seed": null},
-  {"name": "Kelly Oubre", "teamAbbr": "PHI", "position": "F", "seed": null},
-  {"name": "Jalen Pickett", "teamAbbr": "DEN", "position": "G", "seed": null},
-  {"name": "Brandin Podziemski", "teamAbbr": "GSW", "position": "G", "seed": null},
-  {"name": "Corey Kispert", "teamAbbr": "ATL", "position": "F", "seed": null},
-  {"name": "Jarred Vanderbilt", "teamAbbr": "LAL", "position": "F", "seed": null},
-  {"name": "Scoot Henderson", "teamAbbr": "POR", "position": "G", "seed": null},
-  {"name": "Ron Harper", "teamAbbr": "BOS", "position": "G", "seed": null},
-  {"name": "Bones Hyland", "teamAbbr": "MIN", "position": "G", "seed": null},
-  {"name": "Royce O'Neale", "teamAbbr": "PHO", "position": "F", "seed": null},
-  {"name": "John Collins", "teamAbbr": "LAC", "position": "F", "seed": null},
-  {"name": "Wendell Carter", "teamAbbr": "ORL", "position": "C", "seed": null},
-  {"name": "Draymond Green", "teamAbbr": "GSW", "position": "F", "seed": null},
-  {"name": "Nae'Qwan Tomlin", "teamAbbr": "CLE", "position": "F", "seed": null},
-  {"name": "Coby White", "teamAbbr": "CHA", "position": "G", "seed": null},
-  {"name": "Quentin Grimes", "teamAbbr": "PHI", "position": "G", "seed": null},
-  {"name": "Mark Williams", "teamAbbr": "PHO", "position": "C", "seed": null},
-  {"name": "Tyler Kolek", "teamAbbr": "NYK", "position": "G", "seed": null},
-  {"name": "Kelly Olynyk", "teamAbbr": "SAS", "position": "F", "seed": null},
-  {"name": "Thomas Bryant", "teamAbbr": "CLE", "position": "C", "seed": null},
-  {"name": "Kyle Anderson", "teamAbbr": "MIN", "position": "F", "seed": null},
-  {"name": "Moussa Diabaté", "teamAbbr": "CHA", "position": "F", "seed": null},
-  {"name": "De'Anthony Melton", "teamAbbr": "GSW", "position": "G", "seed": null},
-  {"name": "Moses Moody", "teamAbbr": "GSW", "position": "G", "seed": null},
-  {"name": "Tristan da Silva", "teamAbbr": "ORL", "position": "F", "seed": null},
-  {"name": "Jordan Goodwin", "teamAbbr": "PHO", "position": "G", "seed": null},
-  {"name": "Zeke Nnaji", "teamAbbr": "DEN", "position": "F", "seed": null},
-  {"name": "Derrick Jones", "teamAbbr": "LAC", "position": "F", "seed": null},
-  {"name": "Gui Santos", "teamAbbr": "GSW", "position": "F", "seed": null},
-  {"name": "Tyrese Proctor", "teamAbbr": "CLE", "position": "G", "seed": null},
-  {"name": "Caleb Love", "teamAbbr": "POR", "position": "G", "seed": null},
-  {"name": "Nick Smith", "teamAbbr": "LAL", "position": "G", "seed": null},
-  {"name": "Larry Nance", "teamAbbr": "CLE", "position": "F", "seed": null},
-  {"name": "Gradey Dick", "teamAbbr": "TOR", "position": "G", "seed": null},
-  {"name": "Clint Capela", "teamAbbr": "HOU", "position": "C", "seed": null},
-  {"name": "Mouhamed Gueye", "teamAbbr": "ATL", "position": "F", "seed": null},
-  {"name": "Josh Okogie", "teamAbbr": "HOU", "position": "G", "seed": null},
-  {"name": "Al Horford", "teamAbbr": "GSW", "position": "C", "seed": null},
-  {"name": "Oso Ighodaro", "teamAbbr": "PHO", "position": "F", "seed": null},
-  {"name": "Mike Conley", "teamAbbr": "MIN", "position": "G", "seed": null},
-  {"name": "Aaron Holiday", "teamAbbr": "HOU", "position": "G", "seed": null},
-  {"name": "Robert Williams", "teamAbbr": "POR", "position": "C", "seed": null},
-  {"name": "Andre Drummond", "teamAbbr": "PHI", "position": "C", "seed": null},
-  {"name": "DaRon Holmes", "teamAbbr": "DEN", "position": "F", "seed": null},
-  {"name": "Mohamed Diawara", "teamAbbr": "NYK", "position": "F", "seed": null},
-  {"name": "Dominick Barlow", "teamAbbr": "PHI", "position": "F", "seed": null},
-  {"name": "Kris Dunn", "teamAbbr": "LAC", "position": "G", "seed": null},
-  {"name": "Jordan Miller", "teamAbbr": "LAC", "position": "G", "seed": null},
-  {"name": "Dorian Finney-Smith", "teamAbbr": "HOU", "position": "F", "seed": null},
-  {"name": "Isaiah Jackson", "teamAbbr": "LAC", "position": "F", "seed": null},
-  {"name": "Grant Williams", "teamAbbr": "CHA", "position": "F", "seed": null},
-  {"name": "Asa Newell", "teamAbbr": "ATL", "position": "F", "seed": null},
-  {"name": "Brook Lopez", "teamAbbr": "LAC", "position": "C", "seed": null},
-  {"name": "Jeremy Sochan", "teamAbbr": "NYK", "position": "F", "seed": null},
-  {"name": "Ryan Dunn", "teamAbbr": "PHO", "position": "F", "seed": null},
-  {"name": "Brooks Barnhizer", "teamAbbr": "OKC", "position": "G", "seed": null},
-  {"name": "Dalton Knecht", "teamAbbr": "LAL", "position": "F", "seed": null},
-  {"name": "Jevon Carter", "teamAbbr": "ORL", "position": "G", "seed": null},
-  {"name": "Ryan Kalkbrenner", "teamAbbr": "CHA", "position": "C", "seed": null},
-  {"name": "Pat Spencer", "teamAbbr": "GSW", "position": "G", "seed": null},
-  {"name": "Quinten Post", "teamAbbr": "GSW", "position": "C", "seed": null},
-  {"name": "Kris Murray", "teamAbbr": "POR", "position": "F", "seed": null},
-  {"name": "Lindy Waters", "teamAbbr": "SAS", "position": "F", "seed": null},
-  {"name": "Vít Krejčí", "teamAbbr": "POR", "position": "G", "seed": null},
-  {"name": "A.J. Lawson", "teamAbbr": "TOR", "position": "G", "seed": null},
-  {"name": "Gary Payton", "teamAbbr": "GSW", "position": "G", "seed": null},
-  {"name": "Bogdan Bogdanović", "teamAbbr": "LAC", "position": "G", "seed": null},
-  {"name": "Ariel Hukporti", "teamAbbr": "NYK", "position": "C", "seed": null},
-  {"name": "Goga Bitadze", "teamAbbr": "ORL", "position": "C", "seed": null},
-  {"name": "Chaz Lanier", "teamAbbr": "DET", "position": "G", "seed": null},
-  {"name": "Amari Williams", "teamAbbr": "BOS", "position": "F", "seed": null},
-  {"name": "Moritz Wagner", "teamAbbr": "ORL", "position": "F", "seed": null},
-  {"name": "Jordan McLaughlin", "teamAbbr": "SAS", "position": "G", "seed": null},
-  {"name": "Tidjane Salaün", "teamAbbr": "CHA", "position": "F", "seed": null},
-  {"name": "Drew Timme", "teamAbbr": "LAL", "position": "F", "seed": null},
-  {"name": "Matisse Thybulle", "teamAbbr": "POR", "position": "G", "seed": null},
-  {"name": "Trendon Watford", "teamAbbr": "PHI", "position": "G", "seed": null},
-  {"name": "Kobe Sanders", "teamAbbr": "LAC", "position": "G", "seed": null},
-  {"name": "LJ Cryer", "teamAbbr": "GSW", "position": "G", "seed": null},
-  {"name": "Gabe Vincent", "teamAbbr": "ATL", "position": "G", "seed": null},
-  {"name": "Terrence Shannon", "teamAbbr": "MIN", "position": "G", "seed": null},
-  {"name": "Kevin McCullar", "teamAbbr": "NYK", "position": "G", "seed": null},
-  {"name": "Sion James", "teamAbbr": "CHA", "position": "G", "seed": null},
-  {"name": "Will Richard", "teamAbbr": "GSW", "position": "G", "seed": null},
-  {"name": "Adem Bona", "teamAbbr": "PHI", "position": "F", "seed": null},
-  {"name": "Jaylen Clark", "teamAbbr": "MIN", "position": "G", "seed": null},
-  {"name": "Keaton Wallace", "teamAbbr": "ATL", "position": "G", "seed": null},
-  {"name": "Jamison Battle", "teamAbbr": "TOR", "position": "F", "seed": null},
-  {"name": "Justin Edwards", "teamAbbr": "PHI", "position": "F", "seed": null},
-  {"name": "Maxi Kleber", "teamAbbr": "LAL", "position": "F", "seed": null},
-  {"name": "Jamaree Bouyea", "teamAbbr": "PHO", "position": "G", "seed": null},
-  {"name": "Bronny James", "teamAbbr": "LAL", "position": "G", "seed": null},
-  {"name": "Sidy Cissoko", "teamAbbr": "POR", "position": "G", "seed": null},
-  {"name": "Jae'Sean Tate", "teamAbbr": "HOU", "position": "F", "seed": null},
-  {"name": "Joan Beringer", "teamAbbr": "MIN", "position": "F", "seed": null},
-  {"name": "JD Davison", "teamAbbr": "HOU", "position": "G", "seed": null},
-  {"name": "Jamal Cain", "teamAbbr": "ORL", "position": "F", "seed": null},
-  {"name": "Tre Mann", "teamAbbr": "CHA", "position": "G", "seed": null},
-  {"name": "Noah Penda", "teamAbbr": "ORL", "position": "G", "seed": null},
-  {"name": "Rasheer Fleming", "teamAbbr": "PHO", "position": "F", "seed": null},
-  {"name": "Jett Howard", "teamAbbr": "ORL", "position": "G", "seed": null},
-  {"name": "Jabari Walker", "teamAbbr": "PHI", "position": "F", "seed": null},
-  {"name": "Trayce Jackson-Davis", "teamAbbr": "TOR", "position": "F", "seed": null},
-  {"name": "Blake Wesley", "teamAbbr": "POR", "position": "G", "seed": null},
-  {"name": "Nicolas Batum", "teamAbbr": "LAC", "position": "G", "seed": null},
-  {"name": "Amir Coffey", "teamAbbr": "PHO", "position": "G", "seed": null},
-  {"name": "Liam McNeeley", "teamAbbr": "CHA", "position": "F", "seed": null},
-  {"name": "Jonathan Mogbo", "teamAbbr": "TOR", "position": "F", "seed": null},
-  {"name": "Pacôme Dadiet", "teamAbbr": "NYK", "position": "F", "seed": null},
-  {"name": "Josh Green", "teamAbbr": "CHA", "position": "G", "seed": null},
-  {"name": "Alijah Martin", "teamAbbr": "TOR", "position": "G", "seed": null},
-  {"name": "Malevy Leons", "teamAbbr": "GSW", "position": "F", "seed": null},
-  {"name": "Jase Richardson", "teamAbbr": "ORL", "position": "G", "seed": null},
-  {"name": "Yanic Konan Niederhäuser", "teamAbbr": "LAC", "position": "C", "seed": null},
-  {"name": "Jeff Green", "teamAbbr": "HOU", "position": "F", "seed": null},
-  {"name": "Jonathan Isaac", "teamAbbr": "ORL", "position": "F", "seed": null},
-  {"name": "Adou Thiero", "teamAbbr": "LAL", "position": "G", "seed": null},
-  {"name": "Khaman Maluach", "teamAbbr": "PHO", "position": "C", "seed": null},
-  {"name": "Bismack Biyombo", "teamAbbr": "SAS", "position": "C", "seed": null},
-  {"name": "Isaiah Livers", "teamAbbr": "PHO", "position": "F", "seed": null},
-  {"name": "Cam Christie", "teamAbbr": "LAC", "position": "G", "seed": null},
-  {"name": "Pat Connaughton", "teamAbbr": "CHA", "position": "G", "seed": null},
-  {"name": "Joe Ingles", "teamAbbr": "MIN", "position": "F", "seed": null},
-  {"name": "Yang Hansen", "teamAbbr": "POR", "position": "C", "seed": null},
-  {"name": "Garrett Temple", "teamAbbr": "TOR", "position": "G", "seed": null},
-  {"name": "TyTy Washington", "teamAbbr": "LAC", "position": "G", "seed": null},
-  {"name": "Xavier Tillman", "teamAbbr": "CHA", "position": "F", "seed": null},
-  {"name": "Isaiah Crawford", "teamAbbr": "HOU", "position": "F", "seed": null},
-  {"name": "Alex Morales", "teamAbbr": "ORL", "position": "G", "seed": null},
-  {"name": "Seth Curry", "teamAbbr": "GSW", "position": "G", "seed": null},
-  {"name": "Charles Bassey", "teamAbbr": "GSW", "position": "C", "seed": null},
-  {"name": "Isaac Jones", "teamAbbr": "DET", "position": "F", "seed": null},
-  {"name": "Chucky Hepburn", "teamAbbr": "TOR", "position": "G", "seed": null},
-  {"name": "PJ Hall", "teamAbbr": "CHA", "position": "C", "seed": null},
-  {"name": "Nikola Topić", "teamAbbr": "OKC", "position": "G", "seed": null},
-  {"name": "Max Strus", "teamAbbr": "CLE", "position": "G", "seed": null},
-  {"name": "KJ Simpson", "teamAbbr": "DEN", "position": "G", "seed": null},
-  {"name": "Norchad Omier", "teamAbbr": "LAC", "position": "F", "seed": null},
-  {"name": "Dalano Banton", "teamAbbr": "BOS", "position": "F", "seed": null},
-  {"name": "Jayson Kent", "teamAbbr": "POR", "position": "F", "seed": null},
-  {"name": "Harrison Ingram", "teamAbbr": "SAS", "position": "F", "seed": null},
-  {"name": "Fred VanVleet", "teamAbbr": "HOU", "position": "G", "seed": null},
-  {"name": "Thomas Sorber", "teamAbbr": "OKC", "position": "C", "seed": null},
-  {"name": "Zyon Pullin", "teamAbbr": "MIN", "position": "G", "seed": null},
-  {"name": "Tristan Enaruna", "teamAbbr": "CLE", "position": "F", "seed": null},
-  {"name": "Rocco Zikarsky", "teamAbbr": "MIN", "position": "C", "seed": null},
-  {"name": "Tyrese Martin", "teamAbbr": "PHI", "position": "F", "seed": null},
-  {"name": "Trey Jemison", "teamAbbr": "NYK", "position": "C", "seed": null},
-  {"name": "John Tonje", "teamAbbr": "BOS", "position": "G", "seed": null},
-  {"name": "RayJ Dennis", "teamAbbr": "ATL", "position": "G", "seed": null},
-  {"name": "David Roddy", "teamAbbr": "DEN", "position": "F", "seed": null},
-  {"name": "Chris Mañon", "teamAbbr": "LAL", "position": "G", "seed": null},
-  {"name": "Chris Youngblood", "teamAbbr": "POR", "position": "G", "seed": null},
-  {"name": "Mason Plumlee", "teamAbbr": "SAS", "position": "F", "seed": null},
-  {"name": "Tolu Smith", "teamAbbr": "DET", "position": "F", "seed": null},
-  {"name": "MarJon Beauchamp", "teamAbbr": "PHI", "position": "F", "seed": null},
-  {"name": "Olivier Sarr", "teamAbbr": "CLE", "position": "C", "seed": null},
-  {"name": "Johni Broome", "teamAbbr": "PHI", "position": "F", "seed": null},
-  {"name": "Tyus Jones", "teamAbbr": "DEN", "position": "G", "seed": null},
-  {"name": "Kristaps Porziņģis", "teamAbbr": "GSW", "position": "F", "seed": null},
-  {"name": "CJ Huntley", "teamAbbr": "PHO", "position": "F", "seed": null},
-  {"name": "Max Shulga", "teamAbbr": "BOS", "position": "G", "seed": null},
-  {"name": "Tony Bradley", "teamAbbr": "ATL", "position": "C", "seed": null},
-  {"name": "Tosan Evbuomwan", "teamAbbr": "CHA", "position": "F", "seed": null},
-  {"name": "David Jones Garcia", "teamAbbr": "SAS", "position": "G", "seed": null},
-  {"name": "Kyle Lowry", "teamAbbr": "PHI", "position": "G", "seed": null},
-  {"name": "Antonio Reeves", "teamAbbr": "CHA", "position": "G", "seed": null},
-  {"name": "Colin Castleton", "teamAbbr": "ORL", "position": "C", "seed": null},
-  {"name": "Dalen Terry", "teamAbbr": "PHI", "position": "F", "seed": null},
-  {"name": "Nate Williams", "teamAbbr": "GSW", "position": "G", "seed": null},
-  {"name": "Damian Lillard", "teamAbbr": "POR", "position": "G", "seed": null},
-  {"name": "Riley Minix", "teamAbbr": "CLE", "position": "F", "seed": null},
-  {"name": "Enrique Freeman", "teamAbbr": "MIN", "position": "F", "seed": null},
-  {"name": "Sean Pedulla", "teamAbbr": "LAC", "position": "G", "seed": null},
-  {"name": "Keshon Gilbert", "teamAbbr": "ATL", "position": "G", "seed": null},
-  {"name": "Bradley Beal", "teamAbbr": "LAC", "position": "G", "seed": null},
-  {"name": "Julian Phillips", "teamAbbr": "MIN", "position": "F", "seed": null},
-  {"name": "Payton Sandfort", "teamAbbr": "OKC", "position": "F", "seed": null},
-  {"name": "Tristen Newton", "teamAbbr": "HOU", "position": "G", "seed": null},
-  {"name": "Haywood Highsmith", "teamAbbr": "PHO", "position": "F", "seed": null},
-  {"name": "Buddy Hield", "teamAbbr": "ATL", "position": "G", "seed": null},
-  {"name": "Dillon Jones", "teamAbbr": "NYK", "position": "F", "seed": null},
-  {"name": "Emanuel Miller", "teamAbbr": "SAS", "position": "F", "seed": null},
-  {"name": "Christian Koloko", "teamAbbr": "ATL", "position": "C", "seed": null},
-  {"name": "Wendell Moore", "teamAbbr": "DET", "position": "G", "seed": null},
-  {"name": "Curtis Jones", "teamAbbr": "DEN", "position": "G", "seed": null},
-  {"name": "Koby Brea", "teamAbbr": "PHO", "position": "G", "seed": null}
+  {
+    "name": "Shai Gilgeous-Alexander",
+    "teamAbbr": "OKC",
+    "position": "G",
+    "seed": null,
+    "rank": 1
+  },
+  {
+    "name": "Cade Cunningham",
+    "teamAbbr": "DET",
+    "position": "G",
+    "seed": null,
+    "rank": 2
+  },
+  {
+    "name": "Victor Wembanyama",
+    "teamAbbr": "SAS",
+    "position": "F",
+    "seed": null,
+    "rank": 3
+  },
+  {
+    "name": "Jaylen Brown",
+    "teamAbbr": "BOS",
+    "position": "G",
+    "seed": null,
+    "rank": 4
+  },
+  {
+    "name": "Nikola Jokić",
+    "teamAbbr": "DEN",
+    "position": "C",
+    "seed": null,
+    "rank": 5
+  },
+  {
+    "name": "Jayson Tatum",
+    "teamAbbr": "BOS",
+    "position": "F",
+    "seed": null,
+    "rank": 6
+  },
+  {
+    "name": "Jalen Duren",
+    "teamAbbr": "DET",
+    "position": "C",
+    "seed": null,
+    "rank": 7
+  },
+  {
+    "name": "Luka Dončić",
+    "teamAbbr": "LAL",
+    "position": "F",
+    "seed": null,
+    "rank": 8
+  },
+  {
+    "name": "Chet Holmgren",
+    "teamAbbr": "OKC",
+    "position": "C",
+    "seed": null,
+    "rank": 9
+  },
+  {
+    "name": "Stephon Castle",
+    "teamAbbr": "SAS",
+    "position": "G",
+    "seed": null,
+    "rank": 10
+  },
+  {
+    "name": "De'Aaron Fox",
+    "teamAbbr": "SAS",
+    "position": "G",
+    "seed": null,
+    "rank": 11
+  },
+  {
+    "name": "Jamal Murray",
+    "teamAbbr": "DEN",
+    "position": "G",
+    "seed": null,
+    "rank": 12
+  },
+  {
+    "name": "Jalen Williams",
+    "teamAbbr": "OKC",
+    "position": "G",
+    "seed": null,
+    "rank": 13
+  },
+  {
+    "name": "Derrick White",
+    "teamAbbr": "BOS",
+    "position": "G",
+    "seed": null,
+    "rank": 14
+  },
+  {
+    "name": "Jalen Brunson",
+    "teamAbbr": "NYK",
+    "position": "G",
+    "seed": null,
+    "rank": 15
+  },
+  {
+    "name": "Payton Pritchard",
+    "teamAbbr": "BOS",
+    "position": "G",
+    "seed": null,
+    "rank": 16
+  },
+  {
+    "name": "Karl-Anthony Towns",
+    "teamAbbr": "NYK",
+    "position": "C",
+    "seed": null,
+    "rank": 17
+  },
+  {
+    "name": "Donovan Mitchell",
+    "teamAbbr": "CLE",
+    "position": "G",
+    "seed": null,
+    "rank": 18
+  },
+  {
+    "name": "Tobias Harris",
+    "teamAbbr": "DET",
+    "position": "F",
+    "seed": null,
+    "rank": 19
+  },
+  {
+    "name": "Kevin Durant",
+    "teamAbbr": "HOU",
+    "position": "F",
+    "seed": null,
+    "rank": 20
+  },
+  {
+    "name": "Isaiah Hartenstein",
+    "teamAbbr": "OKC",
+    "position": "C",
+    "seed": null,
+    "rank": 21
+  },
+  {
+    "name": "LeBron James",
+    "teamAbbr": "LAL",
+    "position": "F",
+    "seed": null,
+    "rank": 22
+  },
+  {
+    "name": "Ajay Mitchell",
+    "teamAbbr": "OKC",
+    "position": "G",
+    "seed": null,
+    "rank": 23
+  },
+  {
+    "name": "James Harden",
+    "teamAbbr": "CLE",
+    "position": "G",
+    "seed": null,
+    "rank": 24
+  },
+  {
+    "name": "Devin Vassell",
+    "teamAbbr": "SAS",
+    "position": "G",
+    "seed": null,
+    "rank": 25
+  },
+  {
+    "name": "Jalen Johnson",
+    "teamAbbr": "ATL",
+    "position": "F",
+    "seed": null,
+    "rank": 26
+  },
+  {
+    "name": "Ausar Thompson",
+    "teamAbbr": "DET",
+    "position": "G",
+    "seed": null,
+    "rank": 27
+  },
+  {
+    "name": "Alperen Sengun",
+    "teamAbbr": "HOU",
+    "position": "C",
+    "seed": null,
+    "rank": 28
+  },
+  {
+    "name": "Duncan Robinson",
+    "teamAbbr": "DET",
+    "position": "F",
+    "seed": null,
+    "rank": 29
+  },
+  {
+    "name": "Julian Champagnie",
+    "teamAbbr": "SAS",
+    "position": "F",
+    "seed": null,
+    "rank": 30
+  },
+  {
+    "name": "OG Anunoby",
+    "teamAbbr": "NYK",
+    "position": "F",
+    "seed": null,
+    "rank": 31
+  },
+  {
+    "name": "Anthony Edwards",
+    "teamAbbr": "MIN",
+    "position": "G",
+    "seed": null,
+    "rank": 32
+  },
+  {
+    "name": "Keldon Johnson",
+    "teamAbbr": "SAS",
+    "position": "F",
+    "seed": null,
+    "rank": 33
+  },
+  {
+    "name": "Scottie Barnes",
+    "teamAbbr": "TOR",
+    "position": "F",
+    "seed": null,
+    "rank": 34
+  },
+  {
+    "name": "Austin Reaves",
+    "teamAbbr": "LAL",
+    "position": "G",
+    "seed": null,
+    "rank": 35
+  },
+  {
+    "name": "Evan Mobley",
+    "teamAbbr": "CLE",
+    "position": "C",
+    "seed": null,
+    "rank": 36
+  },
+  {
+    "name": "Neemias Queta",
+    "teamAbbr": "BOS",
+    "position": "C",
+    "seed": null,
+    "rank": 37
+  },
+  {
+    "name": "Brandon Ingram",
+    "teamAbbr": "TOR",
+    "position": "F",
+    "seed": null,
+    "rank": 38
+  },
+  {
+    "name": "Aaron Gordon",
+    "teamAbbr": "DEN",
+    "position": "F",
+    "seed": null,
+    "rank": 39
+  },
+  {
+    "name": "Dylan Harper",
+    "teamAbbr": "SAS",
+    "position": "G",
+    "seed": null,
+    "rank": 40
+  },
+  {
+    "name": "Amen Thompson",
+    "teamAbbr": "HOU",
+    "position": "G",
+    "seed": null,
+    "rank": 41
+  },
+  {
+    "name": "Isaiah Stewart",
+    "teamAbbr": "DET",
+    "position": "F",
+    "seed": null,
+    "rank": 42
+  },
+  {
+    "name": "Josh Hart",
+    "teamAbbr": "NYK",
+    "position": "G",
+    "seed": null,
+    "rank": 43
+  },
+  {
+    "name": "Nikola Vučević",
+    "teamAbbr": "BOS",
+    "position": "C",
+    "seed": null,
+    "rank": 44
+  },
+  {
+    "name": "Jaylin Williams",
+    "teamAbbr": "OKC",
+    "position": "F",
+    "seed": null,
+    "rank": 45
+  },
+  {
+    "name": "Mikal Bridges",
+    "teamAbbr": "NYK",
+    "position": "G",
+    "seed": null,
+    "rank": 46
+  },
+  {
+    "name": "RJ Barrett",
+    "teamAbbr": "TOR",
+    "position": "F",
+    "seed": null,
+    "rank": 47
+  },
+  {
+    "name": "Isaiah Joe",
+    "teamAbbr": "OKC",
+    "position": "G",
+    "seed": null,
+    "rank": 48
+  },
+  {
+    "name": "Julius Randle",
+    "teamAbbr": "MIN",
+    "position": "F",
+    "seed": null,
+    "rank": 49
+  },
+  {
+    "name": "Cason Wallace",
+    "teamAbbr": "OKC",
+    "position": "G",
+    "seed": null,
+    "rank": 50
+  },
+  {
+    "name": "Peyton Watson",
+    "teamAbbr": "DEN",
+    "position": "G",
+    "seed": null,
+    "rank": 51
+  },
+  {
+    "name": "Daniss Jenkins",
+    "teamAbbr": "DET",
+    "position": "G",
+    "seed": null,
+    "rank": 52
+  },
+  {
+    "name": "Immanuel Quickley",
+    "teamAbbr": "TOR",
+    "position": "G",
+    "seed": null,
+    "rank": 53
+  },
+  {
+    "name": "Sam Hauser",
+    "teamAbbr": "BOS",
+    "position": "F",
+    "seed": null,
+    "rank": 54
+  },
+  {
+    "name": "Jabari Smith",
+    "teamAbbr": "HOU",
+    "position": "F",
+    "seed": null,
+    "rank": 55
+  },
+  {
+    "name": "Aaron Wiggins",
+    "teamAbbr": "OKC",
+    "position": "G",
+    "seed": null,
+    "rank": 56
+  },
+  {
+    "name": "Harrison Barnes",
+    "teamAbbr": "SAS",
+    "position": "F",
+    "seed": null,
+    "rank": 57
+  },
+  {
+    "name": "Kevin Huerter",
+    "teamAbbr": "DET",
+    "position": "G",
+    "seed": null,
+    "rank": 58
+  },
+  {
+    "name": "Ronald Holland",
+    "teamAbbr": "DET",
+    "position": "F",
+    "seed": null,
+    "rank": 59
+  },
+  {
+    "name": "Jarrett Allen",
+    "teamAbbr": "CLE",
+    "position": "C",
+    "seed": null,
+    "rank": 60
+  },
+  {
+    "name": "Luguentz Dort",
+    "teamAbbr": "OKC",
+    "position": "G",
+    "seed": null,
+    "rank": 61
+  },
+  {
+    "name": "Paul Reed",
+    "teamAbbr": "DET",
+    "position": "F",
+    "seed": null,
+    "rank": 62
+  },
+  {
+    "name": "Cameron Johnson",
+    "teamAbbr": "DEN",
+    "position": "F",
+    "seed": null,
+    "rank": 63
+  },
+  {
+    "name": "Nickeil Alexander-Walker",
+    "teamAbbr": "ATL",
+    "position": "G",
+    "seed": null,
+    "rank": 64
+  },
+  {
+    "name": "Jared McCain",
+    "teamAbbr": "OKC",
+    "position": "G",
+    "seed": null,
+    "rank": 65
+  },
+  {
+    "name": "Onyeka Okongwu",
+    "teamAbbr": "ATL",
+    "position": "F",
+    "seed": null,
+    "rank": 66
+  },
+  {
+    "name": "Christian Braun",
+    "teamAbbr": "DEN",
+    "position": "G",
+    "seed": null,
+    "rank": 67
+  },
+  {
+    "name": "Tim Hardaway",
+    "teamAbbr": "DEN",
+    "position": "G",
+    "seed": null,
+    "rank": 68
+  },
+  {
+    "name": "Miles McBride",
+    "teamAbbr": "NYK",
+    "position": "G",
+    "seed": null,
+    "rank": 69
+  },
+  {
+    "name": "CJ McCollum",
+    "teamAbbr": "ATL",
+    "position": "G",
+    "seed": null,
+    "rank": 70
+  },
+  {
+    "name": "Jaylon Tyson",
+    "teamAbbr": "CLE",
+    "position": "G",
+    "seed": null,
+    "rank": 71
+  },
+  {
+    "name": "Caris LeVert",
+    "teamAbbr": "DET",
+    "position": "G",
+    "seed": null,
+    "rank": 72
+  },
+  {
+    "name": "Luke Kornet",
+    "teamAbbr": "SAS",
+    "position": "C",
+    "seed": null,
+    "rank": 73
+  },
+  {
+    "name": "Reed Sheppard",
+    "teamAbbr": "HOU",
+    "position": "G",
+    "seed": null,
+    "rank": 74
+  },
+  {
+    "name": "Deni Avdija",
+    "teamAbbr": "POR",
+    "position": "F",
+    "seed": null,
+    "rank": 75
+  },
+  {
+    "name": "Kawhi Leonard",
+    "teamAbbr": "LAC",
+    "position": "F",
+    "seed": null,
+    "rank": 76
+  },
+  {
+    "name": "Tyrese Maxey",
+    "teamAbbr": "PHI",
+    "position": "G",
+    "seed": null,
+    "rank": 77
+  },
+  {
+    "name": "Alex Caruso",
+    "teamAbbr": "OKC",
+    "position": "G",
+    "seed": null,
+    "rank": 78
+  },
+  {
+    "name": "Deandre Ayton",
+    "teamAbbr": "LAL",
+    "position": "C",
+    "seed": null,
+    "rank": 79
+  },
+  {
+    "name": "Dyson Daniels",
+    "teamAbbr": "ATL",
+    "position": "G",
+    "seed": null,
+    "rank": 80
+  },
+  {
+    "name": "Luka Garza",
+    "teamAbbr": "BOS",
+    "position": "C",
+    "seed": null,
+    "rank": 81
+  },
+  {
+    "name": "Paolo Banchero",
+    "teamAbbr": "ORL",
+    "position": "F",
+    "seed": null,
+    "rank": 82
+  },
+  {
+    "name": "Sam Merrill",
+    "teamAbbr": "CLE",
+    "position": "G",
+    "seed": null,
+    "rank": 83
+  },
+  {
+    "name": "Javonte Green",
+    "teamAbbr": "DET",
+    "position": "G",
+    "seed": null,
+    "rank": 84
+  },
+  {
+    "name": "Jaden McDaniels",
+    "teamAbbr": "MIN",
+    "position": "F",
+    "seed": null,
+    "rank": 85
+  },
+  {
+    "name": "Tari Eason",
+    "teamAbbr": "HOU",
+    "position": "F",
+    "seed": null,
+    "rank": 86
+  },
+  {
+    "name": "Kenrich Williams",
+    "teamAbbr": "OKC",
+    "position": "G",
+    "seed": null,
+    "rank": 87
+  },
+  {
+    "name": "Devin Booker",
+    "teamAbbr": "PHO",
+    "position": "G",
+    "seed": null,
+    "rank": 88
+  },
+  {
+    "name": "Sandro Mamukelashvili",
+    "teamAbbr": "TOR",
+    "position": "F",
+    "seed": null,
+    "rank": 89
+  },
+  {
+    "name": "Rudy Gobert",
+    "teamAbbr": "MIN",
+    "position": "C",
+    "seed": null,
+    "rank": 90
+  },
+  {
+    "name": "Stephen Curry",
+    "teamAbbr": "GSW",
+    "position": "G",
+    "seed": null,
+    "rank": 91
+  },
+  {
+    "name": "Naz Reid",
+    "teamAbbr": "MIN",
+    "position": "C",
+    "seed": null,
+    "rank": 92
+  },
+  {
+    "name": "Joel Embiid",
+    "teamAbbr": "PHI",
+    "position": "C",
+    "seed": null,
+    "rank": 93
+  },
+  {
+    "name": "Donte DiVincenzo",
+    "teamAbbr": "MIN",
+    "position": "G",
+    "seed": null,
+    "rank": 94
+  },
+  {
+    "name": "Ayo Dosunmu",
+    "teamAbbr": "MIN",
+    "position": "G",
+    "seed": null,
+    "rank": 95
+  },
+  {
+    "name": "Mitchell Robinson",
+    "teamAbbr": "NYK",
+    "position": "C",
+    "seed": null,
+    "rank": 96
+  },
+  {
+    "name": "Jakob Poeltl",
+    "teamAbbr": "TOR",
+    "position": "C",
+    "seed": null,
+    "rank": 97
+  },
+  {
+    "name": "Rui Hachimura",
+    "teamAbbr": "LAL",
+    "position": "F",
+    "seed": null,
+    "rank": 98
+  },
+  {
+    "name": "Baylor Scheierman",
+    "teamAbbr": "BOS",
+    "position": "G",
+    "seed": null,
+    "rank": 99
+  },
+  {
+    "name": "Jonathan Kuminga",
+    "teamAbbr": "ATL",
+    "position": "F",
+    "seed": null,
+    "rank": 100
+  },
+  {
+    "name": "LaMelo Ball",
+    "teamAbbr": "CHA",
+    "position": "G",
+    "seed": null,
+    "rank": 101
+  },
+  {
+    "name": "Bruce Brown",
+    "teamAbbr": "DEN",
+    "position": "G",
+    "seed": null,
+    "rank": 102
+  },
+  {
+    "name": "Marcus Smart",
+    "teamAbbr": "LAL",
+    "position": "G",
+    "seed": null,
+    "rank": 103
+  },
+  {
+    "name": "Jordan Walsh",
+    "teamAbbr": "BOS",
+    "position": "G",
+    "seed": null,
+    "rank": 104
+  },
+  {
+    "name": "Franz Wagner",
+    "teamAbbr": "ORL",
+    "position": "F",
+    "seed": null,
+    "rank": 105
+  },
+  {
+    "name": "Landry Shamet",
+    "teamAbbr": "NYK",
+    "position": "G",
+    "seed": null,
+    "rank": 106
+  },
+  {
+    "name": "Jonas Valančiūnas",
+    "teamAbbr": "DEN",
+    "position": "C",
+    "seed": null,
+    "rank": 107
+  },
+  {
+    "name": "Jake LaRavia",
+    "teamAbbr": "LAL",
+    "position": "F",
+    "seed": null,
+    "rank": 108
+  },
+  {
+    "name": "Brandon Miller",
+    "teamAbbr": "CHA",
+    "position": "F",
+    "seed": null,
+    "rank": 109
+  },
+  {
+    "name": "Collin Murray-Boyles",
+    "teamAbbr": "TOR",
+    "position": "F",
+    "seed": null,
+    "rank": 110
+  },
+  {
+    "name": "Jimmy Butler",
+    "teamAbbr": "GSW",
+    "position": "F",
+    "seed": null,
+    "rank": 111
+  },
+  {
+    "name": "Branden Carlson",
+    "teamAbbr": "OKC",
+    "position": "C",
+    "seed": null,
+    "rank": 112
+  },
+  {
+    "name": "Jose Alvarado",
+    "teamAbbr": "NYK",
+    "position": "G",
+    "seed": null,
+    "rank": 113
+  },
+  {
+    "name": "Desmond Bane",
+    "teamAbbr": "ORL",
+    "position": "G",
+    "seed": null,
+    "rank": 114
+  },
+  {
+    "name": "Shaedon Sharpe",
+    "teamAbbr": "POR",
+    "position": "G",
+    "seed": null,
+    "rank": 115
+  },
+  {
+    "name": "Darius Garland",
+    "teamAbbr": "LAC",
+    "position": "G",
+    "seed": null,
+    "rank": 116
+  },
+  {
+    "name": "Paul George",
+    "teamAbbr": "PHI",
+    "position": "F",
+    "seed": null,
+    "rank": 117
+  },
+  {
+    "name": "Jrue Holiday",
+    "teamAbbr": "POR",
+    "position": "G",
+    "seed": null,
+    "rank": 118
+  },
+  {
+    "name": "Marcus Sasser",
+    "teamAbbr": "DET",
+    "position": "G",
+    "seed": null,
+    "rank": 119
+  },
+  {
+    "name": "Dennis Schröder",
+    "teamAbbr": "CLE",
+    "position": "G",
+    "seed": null,
+    "rank": 120
+  },
+  {
+    "name": "Luke Kennard",
+    "teamAbbr": "LAL",
+    "position": "G",
+    "seed": null,
+    "rank": 121
+  },
+  {
+    "name": "Keon Ellis",
+    "teamAbbr": "CLE",
+    "position": "G",
+    "seed": null,
+    "rank": 122
+  },
+  {
+    "name": "Jerami Grant",
+    "teamAbbr": "POR",
+    "position": "F",
+    "seed": null,
+    "rank": 123
+  },
+  {
+    "name": "Kon Knueppel",
+    "teamAbbr": "CHA",
+    "position": "G",
+    "seed": null,
+    "rank": 124
+  },
+  {
+    "name": "Steven Adams",
+    "teamAbbr": "HOU",
+    "position": "C",
+    "seed": null,
+    "rank": 125
+  },
+  {
+    "name": "Miles Bridges",
+    "teamAbbr": "CHA",
+    "position": "F",
+    "seed": null,
+    "rank": 126
+  },
+  {
+    "name": "Dillon Brooks",
+    "teamAbbr": "PHO",
+    "position": "G",
+    "seed": null,
+    "rank": 127
+  },
+  {
+    "name": "Jordan Clarkson",
+    "teamAbbr": "NYK",
+    "position": "G",
+    "seed": null,
+    "rank": 128
+  },
+  {
+    "name": "Jamal Shead",
+    "teamAbbr": "TOR",
+    "position": "G",
+    "seed": null,
+    "rank": 129
+  },
+  {
+    "name": "Donovan Clingan",
+    "teamAbbr": "POR",
+    "position": "C",
+    "seed": null,
+    "rank": 130
+  },
+  {
+    "name": "Grayson Allen",
+    "teamAbbr": "PHO",
+    "position": "G",
+    "seed": null,
+    "rank": 131
+  },
+  {
+    "name": "Zaccharie Risacher",
+    "teamAbbr": "ATL",
+    "position": "F",
+    "seed": null,
+    "rank": 132
+  },
+  {
+    "name": "VJ Edgecombe",
+    "teamAbbr": "PHI",
+    "position": "G",
+    "seed": null,
+    "rank": 133
+  },
+  {
+    "name": "Jalen Suggs",
+    "teamAbbr": "ORL",
+    "position": "G",
+    "seed": null,
+    "rank": 134
+  },
+  {
+    "name": "Dean Wade",
+    "teamAbbr": "CLE",
+    "position": "F",
+    "seed": null,
+    "rank": 135
+  },
+  {
+    "name": "Jalen Green",
+    "teamAbbr": "PHO",
+    "position": "G",
+    "seed": null,
+    "rank": 136
+  },
+  {
+    "name": "Spencer Jones",
+    "teamAbbr": "DEN",
+    "position": "F",
+    "seed": null,
+    "rank": 137
+  },
+  {
+    "name": "Toumani Camara",
+    "teamAbbr": "POR",
+    "position": "F",
+    "seed": null,
+    "rank": 138
+  },
+  {
+    "name": "Carter Bryant",
+    "teamAbbr": "SAS",
+    "position": "F",
+    "seed": null,
+    "rank": 139
+  },
+  {
+    "name": "Hugo González",
+    "teamAbbr": "BOS",
+    "position": "G",
+    "seed": null,
+    "rank": 140
+  },
+  {
+    "name": "Anthony Black",
+    "teamAbbr": "ORL",
+    "position": "G",
+    "seed": null,
+    "rank": 141
+  },
+  {
+    "name": "Julian Strawther",
+    "teamAbbr": "DEN",
+    "position": "G",
+    "seed": null,
+    "rank": 142
+  },
+  {
+    "name": "Collin Gillespie",
+    "teamAbbr": "PHO",
+    "position": "G",
+    "seed": null,
+    "rank": 143
+  },
+  {
+    "name": "Bennedict Mathurin",
+    "teamAbbr": "LAC",
+    "position": "G",
+    "seed": null,
+    "rank": 144
+  },
+  {
+    "name": "Jaxson Hayes",
+    "teamAbbr": "LAL",
+    "position": "C",
+    "seed": null,
+    "rank": 145
+  },
+  {
+    "name": "Ja'Kobe Walter",
+    "teamAbbr": "TOR",
+    "position": "G",
+    "seed": null,
+    "rank": 146
+  },
+  {
+    "name": "Jock Landale",
+    "teamAbbr": "ATL",
+    "position": "C",
+    "seed": null,
+    "rank": 147
+  },
+  {
+    "name": "Craig Porter",
+    "teamAbbr": "CLE",
+    "position": "G",
+    "seed": null,
+    "rank": 148
+  },
+  {
+    "name": "Kelly Oubre",
+    "teamAbbr": "PHI",
+    "position": "F",
+    "seed": null,
+    "rank": 149
+  },
+  {
+    "name": "Jalen Pickett",
+    "teamAbbr": "DEN",
+    "position": "G",
+    "seed": null,
+    "rank": 150
+  },
+  {
+    "name": "Brandin Podziemski",
+    "teamAbbr": "GSW",
+    "position": "G",
+    "seed": null,
+    "rank": 151
+  },
+  {
+    "name": "Corey Kispert",
+    "teamAbbr": "ATL",
+    "position": "F",
+    "seed": null,
+    "rank": 152
+  },
+  {
+    "name": "Jarred Vanderbilt",
+    "teamAbbr": "LAL",
+    "position": "F",
+    "seed": null,
+    "rank": 153
+  },
+  {
+    "name": "Scoot Henderson",
+    "teamAbbr": "POR",
+    "position": "G",
+    "seed": null,
+    "rank": 154
+  },
+  {
+    "name": "Ron Harper",
+    "teamAbbr": "BOS",
+    "position": "G",
+    "seed": null,
+    "rank": 155
+  },
+  {
+    "name": "Bones Hyland",
+    "teamAbbr": "MIN",
+    "position": "G",
+    "seed": null,
+    "rank": 156
+  },
+  {
+    "name": "Royce O'Neale",
+    "teamAbbr": "PHO",
+    "position": "F",
+    "seed": null,
+    "rank": 157
+  },
+  {
+    "name": "John Collins",
+    "teamAbbr": "LAC",
+    "position": "F",
+    "seed": null,
+    "rank": 158
+  },
+  {
+    "name": "Wendell Carter",
+    "teamAbbr": "ORL",
+    "position": "C",
+    "seed": null,
+    "rank": 159
+  },
+  {
+    "name": "Draymond Green",
+    "teamAbbr": "GSW",
+    "position": "F",
+    "seed": null,
+    "rank": 160
+  },
+  {
+    "name": "Nae'Qwan Tomlin",
+    "teamAbbr": "CLE",
+    "position": "F",
+    "seed": null,
+    "rank": 161
+  },
+  {
+    "name": "Coby White",
+    "teamAbbr": "CHA",
+    "position": "G",
+    "seed": null,
+    "rank": 162
+  },
+  {
+    "name": "Quentin Grimes",
+    "teamAbbr": "PHI",
+    "position": "G",
+    "seed": null,
+    "rank": 163
+  },
+  {
+    "name": "Mark Williams",
+    "teamAbbr": "PHO",
+    "position": "C",
+    "seed": null,
+    "rank": 164
+  },
+  {
+    "name": "Tyler Kolek",
+    "teamAbbr": "NYK",
+    "position": "G",
+    "seed": null,
+    "rank": 165
+  },
+  {
+    "name": "Kelly Olynyk",
+    "teamAbbr": "SAS",
+    "position": "F",
+    "seed": null,
+    "rank": 166
+  },
+  {
+    "name": "Thomas Bryant",
+    "teamAbbr": "CLE",
+    "position": "C",
+    "seed": null,
+    "rank": 167
+  },
+  {
+    "name": "Kyle Anderson",
+    "teamAbbr": "MIN",
+    "position": "F",
+    "seed": null,
+    "rank": 168
+  },
+  {
+    "name": "Moussa Diabaté",
+    "teamAbbr": "CHA",
+    "position": "F",
+    "seed": null,
+    "rank": 169
+  },
+  {
+    "name": "De'Anthony Melton",
+    "teamAbbr": "GSW",
+    "position": "G",
+    "seed": null,
+    "rank": 170
+  },
+  {
+    "name": "Moses Moody",
+    "teamAbbr": "GSW",
+    "position": "G",
+    "seed": null,
+    "rank": 171
+  },
+  {
+    "name": "Tristan da Silva",
+    "teamAbbr": "ORL",
+    "position": "F",
+    "seed": null,
+    "rank": 172
+  },
+  {
+    "name": "Jordan Goodwin",
+    "teamAbbr": "PHO",
+    "position": "G",
+    "seed": null,
+    "rank": 173
+  },
+  {
+    "name": "Zeke Nnaji",
+    "teamAbbr": "DEN",
+    "position": "F",
+    "seed": null,
+    "rank": 174
+  },
+  {
+    "name": "Derrick Jones",
+    "teamAbbr": "LAC",
+    "position": "F",
+    "seed": null,
+    "rank": 175
+  },
+  {
+    "name": "Gui Santos",
+    "teamAbbr": "GSW",
+    "position": "F",
+    "seed": null,
+    "rank": 176
+  },
+  {
+    "name": "Tyrese Proctor",
+    "teamAbbr": "CLE",
+    "position": "G",
+    "seed": null,
+    "rank": 177
+  },
+  {
+    "name": "Caleb Love",
+    "teamAbbr": "POR",
+    "position": "G",
+    "seed": null,
+    "rank": 178
+  },
+  {
+    "name": "Nick Smith",
+    "teamAbbr": "LAL",
+    "position": "G",
+    "seed": null,
+    "rank": 179
+  },
+  {
+    "name": "Larry Nance",
+    "teamAbbr": "CLE",
+    "position": "F",
+    "seed": null,
+    "rank": 180
+  },
+  {
+    "name": "Gradey Dick",
+    "teamAbbr": "TOR",
+    "position": "G",
+    "seed": null,
+    "rank": 181
+  },
+  {
+    "name": "Clint Capela",
+    "teamAbbr": "HOU",
+    "position": "C",
+    "seed": null,
+    "rank": 182
+  },
+  {
+    "name": "Mouhamed Gueye",
+    "teamAbbr": "ATL",
+    "position": "F",
+    "seed": null,
+    "rank": 183
+  },
+  {
+    "name": "Josh Okogie",
+    "teamAbbr": "HOU",
+    "position": "G",
+    "seed": null,
+    "rank": 184
+  },
+  {
+    "name": "Al Horford",
+    "teamAbbr": "GSW",
+    "position": "C",
+    "seed": null,
+    "rank": 185
+  },
+  {
+    "name": "Oso Ighodaro",
+    "teamAbbr": "PHO",
+    "position": "F",
+    "seed": null,
+    "rank": 186
+  },
+  {
+    "name": "Mike Conley",
+    "teamAbbr": "MIN",
+    "position": "G",
+    "seed": null,
+    "rank": 187
+  },
+  {
+    "name": "Aaron Holiday",
+    "teamAbbr": "HOU",
+    "position": "G",
+    "seed": null,
+    "rank": 188
+  },
+  {
+    "name": "Robert Williams",
+    "teamAbbr": "POR",
+    "position": "C",
+    "seed": null,
+    "rank": 189
+  },
+  {
+    "name": "Andre Drummond",
+    "teamAbbr": "PHI",
+    "position": "C",
+    "seed": null,
+    "rank": 190
+  },
+  {
+    "name": "DaRon Holmes",
+    "teamAbbr": "DEN",
+    "position": "F",
+    "seed": null,
+    "rank": 191
+  },
+  {
+    "name": "Mohamed Diawara",
+    "teamAbbr": "NYK",
+    "position": "F",
+    "seed": null,
+    "rank": 192
+  },
+  {
+    "name": "Dominick Barlow",
+    "teamAbbr": "PHI",
+    "position": "F",
+    "seed": null,
+    "rank": 193
+  },
+  {
+    "name": "Kris Dunn",
+    "teamAbbr": "LAC",
+    "position": "G",
+    "seed": null,
+    "rank": 194
+  },
+  {
+    "name": "Jordan Miller",
+    "teamAbbr": "LAC",
+    "position": "G",
+    "seed": null,
+    "rank": 195
+  },
+  {
+    "name": "Dorian Finney-Smith",
+    "teamAbbr": "HOU",
+    "position": "F",
+    "seed": null,
+    "rank": 196
+  },
+  {
+    "name": "Isaiah Jackson",
+    "teamAbbr": "LAC",
+    "position": "F",
+    "seed": null,
+    "rank": 197
+  },
+  {
+    "name": "Grant Williams",
+    "teamAbbr": "CHA",
+    "position": "F",
+    "seed": null,
+    "rank": 198
+  },
+  {
+    "name": "Asa Newell",
+    "teamAbbr": "ATL",
+    "position": "F",
+    "seed": null,
+    "rank": 199
+  },
+  {
+    "name": "Brook Lopez",
+    "teamAbbr": "LAC",
+    "position": "C",
+    "seed": null,
+    "rank": 200
+  },
+  {
+    "name": "Jeremy Sochan",
+    "teamAbbr": "NYK",
+    "position": "F",
+    "seed": null,
+    "rank": 201
+  },
+  {
+    "name": "Ryan Dunn",
+    "teamAbbr": "PHO",
+    "position": "F",
+    "seed": null,
+    "rank": 202
+  },
+  {
+    "name": "Brooks Barnhizer",
+    "teamAbbr": "OKC",
+    "position": "G",
+    "seed": null,
+    "rank": 203
+  },
+  {
+    "name": "Dalton Knecht",
+    "teamAbbr": "LAL",
+    "position": "F",
+    "seed": null,
+    "rank": 204
+  },
+  {
+    "name": "Jevon Carter",
+    "teamAbbr": "ORL",
+    "position": "G",
+    "seed": null,
+    "rank": 205
+  },
+  {
+    "name": "Ryan Kalkbrenner",
+    "teamAbbr": "CHA",
+    "position": "C",
+    "seed": null,
+    "rank": 206
+  },
+  {
+    "name": "Pat Spencer",
+    "teamAbbr": "GSW",
+    "position": "G",
+    "seed": null,
+    "rank": 207
+  },
+  {
+    "name": "Quinten Post",
+    "teamAbbr": "GSW",
+    "position": "C",
+    "seed": null,
+    "rank": 208
+  },
+  {
+    "name": "Kris Murray",
+    "teamAbbr": "POR",
+    "position": "F",
+    "seed": null,
+    "rank": 209
+  },
+  {
+    "name": "Lindy Waters",
+    "teamAbbr": "SAS",
+    "position": "F",
+    "seed": null,
+    "rank": 210
+  },
+  {
+    "name": "Vít Krejčí",
+    "teamAbbr": "POR",
+    "position": "G",
+    "seed": null,
+    "rank": 211
+  },
+  {
+    "name": "A.J. Lawson",
+    "teamAbbr": "TOR",
+    "position": "G",
+    "seed": null,
+    "rank": 212
+  },
+  {
+    "name": "Gary Payton",
+    "teamAbbr": "GSW",
+    "position": "G",
+    "seed": null,
+    "rank": 213
+  },
+  {
+    "name": "Bogdan Bogdanović",
+    "teamAbbr": "LAC",
+    "position": "G",
+    "seed": null,
+    "rank": 214
+  },
+  {
+    "name": "Ariel Hukporti",
+    "teamAbbr": "NYK",
+    "position": "C",
+    "seed": null,
+    "rank": 215
+  },
+  {
+    "name": "Goga Bitadze",
+    "teamAbbr": "ORL",
+    "position": "C",
+    "seed": null,
+    "rank": 216
+  },
+  {
+    "name": "Chaz Lanier",
+    "teamAbbr": "DET",
+    "position": "G",
+    "seed": null,
+    "rank": 217
+  },
+  {
+    "name": "Amari Williams",
+    "teamAbbr": "BOS",
+    "position": "F",
+    "seed": null,
+    "rank": 218
+  },
+  {
+    "name": "Moritz Wagner",
+    "teamAbbr": "ORL",
+    "position": "F",
+    "seed": null,
+    "rank": 219
+  },
+  {
+    "name": "Jordan McLaughlin",
+    "teamAbbr": "SAS",
+    "position": "G",
+    "seed": null,
+    "rank": 220
+  },
+  {
+    "name": "Tidjane Salaün",
+    "teamAbbr": "CHA",
+    "position": "F",
+    "seed": null,
+    "rank": 221
+  },
+  {
+    "name": "Drew Timme",
+    "teamAbbr": "LAL",
+    "position": "F",
+    "seed": null,
+    "rank": 222
+  },
+  {
+    "name": "Matisse Thybulle",
+    "teamAbbr": "POR",
+    "position": "G",
+    "seed": null,
+    "rank": 223
+  },
+  {
+    "name": "Trendon Watford",
+    "teamAbbr": "PHI",
+    "position": "G",
+    "seed": null,
+    "rank": 224
+  },
+  {
+    "name": "Kobe Sanders",
+    "teamAbbr": "LAC",
+    "position": "G",
+    "seed": null,
+    "rank": 225
+  },
+  {
+    "name": "LJ Cryer",
+    "teamAbbr": "GSW",
+    "position": "G",
+    "seed": null,
+    "rank": 226
+  },
+  {
+    "name": "Gabe Vincent",
+    "teamAbbr": "ATL",
+    "position": "G",
+    "seed": null,
+    "rank": 227
+  },
+  {
+    "name": "Terrence Shannon",
+    "teamAbbr": "MIN",
+    "position": "G",
+    "seed": null,
+    "rank": 228
+  },
+  {
+    "name": "Kevin McCullar",
+    "teamAbbr": "NYK",
+    "position": "G",
+    "seed": null,
+    "rank": 229
+  },
+  {
+    "name": "Sion James",
+    "teamAbbr": "CHA",
+    "position": "G",
+    "seed": null,
+    "rank": 230
+  },
+  {
+    "name": "Will Richard",
+    "teamAbbr": "GSW",
+    "position": "G",
+    "seed": null,
+    "rank": 231
+  },
+  {
+    "name": "Adem Bona",
+    "teamAbbr": "PHI",
+    "position": "F",
+    "seed": null,
+    "rank": 232
+  },
+  {
+    "name": "Jaylen Clark",
+    "teamAbbr": "MIN",
+    "position": "G",
+    "seed": null,
+    "rank": 233
+  },
+  {
+    "name": "Keaton Wallace",
+    "teamAbbr": "ATL",
+    "position": "G",
+    "seed": null,
+    "rank": 234
+  },
+  {
+    "name": "Jamison Battle",
+    "teamAbbr": "TOR",
+    "position": "F",
+    "seed": null,
+    "rank": 235
+  },
+  {
+    "name": "Justin Edwards",
+    "teamAbbr": "PHI",
+    "position": "F",
+    "seed": null,
+    "rank": 236
+  },
+  {
+    "name": "Maxi Kleber",
+    "teamAbbr": "LAL",
+    "position": "F",
+    "seed": null,
+    "rank": 237
+  },
+  {
+    "name": "Jamaree Bouyea",
+    "teamAbbr": "PHO",
+    "position": "G",
+    "seed": null,
+    "rank": 238
+  },
+  {
+    "name": "Bronny James",
+    "teamAbbr": "LAL",
+    "position": "G",
+    "seed": null,
+    "rank": 239
+  },
+  {
+    "name": "Sidy Cissoko",
+    "teamAbbr": "POR",
+    "position": "G",
+    "seed": null,
+    "rank": 240
+  },
+  {
+    "name": "Jae'Sean Tate",
+    "teamAbbr": "HOU",
+    "position": "F",
+    "seed": null,
+    "rank": 241
+  },
+  {
+    "name": "Joan Beringer",
+    "teamAbbr": "MIN",
+    "position": "F",
+    "seed": null,
+    "rank": 242
+  },
+  {
+    "name": "JD Davison",
+    "teamAbbr": "HOU",
+    "position": "G",
+    "seed": null,
+    "rank": 243
+  },
+  {
+    "name": "Jamal Cain",
+    "teamAbbr": "ORL",
+    "position": "F",
+    "seed": null,
+    "rank": 244
+  },
+  {
+    "name": "Tre Mann",
+    "teamAbbr": "CHA",
+    "position": "G",
+    "seed": null,
+    "rank": 245
+  },
+  {
+    "name": "Noah Penda",
+    "teamAbbr": "ORL",
+    "position": "G",
+    "seed": null,
+    "rank": 246
+  },
+  {
+    "name": "Rasheer Fleming",
+    "teamAbbr": "PHO",
+    "position": "F",
+    "seed": null,
+    "rank": 247
+  },
+  {
+    "name": "Jett Howard",
+    "teamAbbr": "ORL",
+    "position": "G",
+    "seed": null,
+    "rank": 248
+  },
+  {
+    "name": "Jabari Walker",
+    "teamAbbr": "PHI",
+    "position": "F",
+    "seed": null,
+    "rank": 249
+  },
+  {
+    "name": "Trayce Jackson-Davis",
+    "teamAbbr": "TOR",
+    "position": "F",
+    "seed": null,
+    "rank": 250
+  },
+  {
+    "name": "Blake Wesley",
+    "teamAbbr": "POR",
+    "position": "G",
+    "seed": null,
+    "rank": 251
+  },
+  {
+    "name": "Nicolas Batum",
+    "teamAbbr": "LAC",
+    "position": "G",
+    "seed": null,
+    "rank": 252
+  },
+  {
+    "name": "Amir Coffey",
+    "teamAbbr": "PHO",
+    "position": "G",
+    "seed": null,
+    "rank": 253
+  },
+  {
+    "name": "Liam McNeeley",
+    "teamAbbr": "CHA",
+    "position": "F",
+    "seed": null,
+    "rank": 254
+  },
+  {
+    "name": "Jonathan Mogbo",
+    "teamAbbr": "TOR",
+    "position": "F",
+    "seed": null,
+    "rank": 255
+  },
+  {
+    "name": "Pacôme Dadiet",
+    "teamAbbr": "NYK",
+    "position": "F",
+    "seed": null,
+    "rank": 256
+  },
+  {
+    "name": "Josh Green",
+    "teamAbbr": "CHA",
+    "position": "G",
+    "seed": null,
+    "rank": 257
+  },
+  {
+    "name": "Alijah Martin",
+    "teamAbbr": "TOR",
+    "position": "G",
+    "seed": null,
+    "rank": 258
+  },
+  {
+    "name": "Malevy Leons",
+    "teamAbbr": "GSW",
+    "position": "F",
+    "seed": null,
+    "rank": 259
+  },
+  {
+    "name": "Jase Richardson",
+    "teamAbbr": "ORL",
+    "position": "G",
+    "seed": null,
+    "rank": 260
+  },
+  {
+    "name": "Yanic Konan Niederhäuser",
+    "teamAbbr": "LAC",
+    "position": "C",
+    "seed": null,
+    "rank": 261
+  },
+  {
+    "name": "Jeff Green",
+    "teamAbbr": "HOU",
+    "position": "F",
+    "seed": null,
+    "rank": 262
+  },
+  {
+    "name": "Jonathan Isaac",
+    "teamAbbr": "ORL",
+    "position": "F",
+    "seed": null,
+    "rank": 263
+  },
+  {
+    "name": "Adou Thiero",
+    "teamAbbr": "LAL",
+    "position": "G",
+    "seed": null,
+    "rank": 264
+  },
+  {
+    "name": "Khaman Maluach",
+    "teamAbbr": "PHO",
+    "position": "C",
+    "seed": null,
+    "rank": 265
+  },
+  {
+    "name": "Bismack Biyombo",
+    "teamAbbr": "SAS",
+    "position": "C",
+    "seed": null,
+    "rank": 266
+  },
+  {
+    "name": "Isaiah Livers",
+    "teamAbbr": "PHO",
+    "position": "F",
+    "seed": null,
+    "rank": 267
+  },
+  {
+    "name": "Cam Christie",
+    "teamAbbr": "LAC",
+    "position": "G",
+    "seed": null,
+    "rank": 268
+  },
+  {
+    "name": "Pat Connaughton",
+    "teamAbbr": "CHA",
+    "position": "G",
+    "seed": null,
+    "rank": 269
+  },
+  {
+    "name": "Joe Ingles",
+    "teamAbbr": "MIN",
+    "position": "F",
+    "seed": null,
+    "rank": 270
+  },
+  {
+    "name": "Yang Hansen",
+    "teamAbbr": "POR",
+    "position": "C",
+    "seed": null,
+    "rank": 271
+  },
+  {
+    "name": "Garrett Temple",
+    "teamAbbr": "TOR",
+    "position": "G",
+    "seed": null,
+    "rank": 272
+  },
+  {
+    "name": "TyTy Washington",
+    "teamAbbr": "LAC",
+    "position": "G",
+    "seed": null,
+    "rank": 273
+  },
+  {
+    "name": "Xavier Tillman",
+    "teamAbbr": "CHA",
+    "position": "F",
+    "seed": null,
+    "rank": 274
+  },
+  {
+    "name": "Isaiah Crawford",
+    "teamAbbr": "HOU",
+    "position": "F",
+    "seed": null,
+    "rank": 275
+  },
+  {
+    "name": "Alex Morales",
+    "teamAbbr": "ORL",
+    "position": "G",
+    "seed": null,
+    "rank": 276
+  },
+  {
+    "name": "Seth Curry",
+    "teamAbbr": "GSW",
+    "position": "G",
+    "seed": null,
+    "rank": 277
+  },
+  {
+    "name": "Charles Bassey",
+    "teamAbbr": "GSW",
+    "position": "C",
+    "seed": null,
+    "rank": 278
+  },
+  {
+    "name": "Isaac Jones",
+    "teamAbbr": "DET",
+    "position": "F",
+    "seed": null,
+    "rank": 279
+  },
+  {
+    "name": "Chucky Hepburn",
+    "teamAbbr": "TOR",
+    "position": "G",
+    "seed": null,
+    "rank": 280
+  },
+  {
+    "name": "PJ Hall",
+    "teamAbbr": "CHA",
+    "position": "C",
+    "seed": null,
+    "rank": 281
+  },
+  {
+    "name": "Nikola Topić",
+    "teamAbbr": "OKC",
+    "position": "G",
+    "seed": null,
+    "rank": 282
+  },
+  {
+    "name": "Max Strus",
+    "teamAbbr": "CLE",
+    "position": "G",
+    "seed": null,
+    "rank": 283
+  },
+  {
+    "name": "KJ Simpson",
+    "teamAbbr": "DEN",
+    "position": "G",
+    "seed": null,
+    "rank": 284
+  },
+  {
+    "name": "Norchad Omier",
+    "teamAbbr": "LAC",
+    "position": "F",
+    "seed": null,
+    "rank": 285
+  },
+  {
+    "name": "Dalano Banton",
+    "teamAbbr": "BOS",
+    "position": "F",
+    "seed": null,
+    "rank": 286
+  },
+  {
+    "name": "Jayson Kent",
+    "teamAbbr": "POR",
+    "position": "F",
+    "seed": null,
+    "rank": 287
+  },
+  {
+    "name": "Harrison Ingram",
+    "teamAbbr": "SAS",
+    "position": "F",
+    "seed": null,
+    "rank": 288
+  },
+  {
+    "name": "Fred VanVleet",
+    "teamAbbr": "HOU",
+    "position": "G",
+    "seed": null,
+    "rank": 289
+  },
+  {
+    "name": "Thomas Sorber",
+    "teamAbbr": "OKC",
+    "position": "C",
+    "seed": null,
+    "rank": 290
+  },
+  {
+    "name": "Zyon Pullin",
+    "teamAbbr": "MIN",
+    "position": "G",
+    "seed": null,
+    "rank": 291
+  },
+  {
+    "name": "Tristan Enaruna",
+    "teamAbbr": "CLE",
+    "position": "F",
+    "seed": null,
+    "rank": 292
+  },
+  {
+    "name": "Rocco Zikarsky",
+    "teamAbbr": "MIN",
+    "position": "C",
+    "seed": null,
+    "rank": 293
+  },
+  {
+    "name": "Tyrese Martin",
+    "teamAbbr": "PHI",
+    "position": "F",
+    "seed": null,
+    "rank": 294
+  },
+  {
+    "name": "Trey Jemison",
+    "teamAbbr": "NYK",
+    "position": "C",
+    "seed": null,
+    "rank": 295
+  },
+  {
+    "name": "John Tonje",
+    "teamAbbr": "BOS",
+    "position": "G",
+    "seed": null,
+    "rank": 296
+  },
+  {
+    "name": "RayJ Dennis",
+    "teamAbbr": "ATL",
+    "position": "G",
+    "seed": null,
+    "rank": 297
+  },
+  {
+    "name": "David Roddy",
+    "teamAbbr": "DEN",
+    "position": "F",
+    "seed": null,
+    "rank": 298
+  },
+  {
+    "name": "Chris Mañon",
+    "teamAbbr": "LAL",
+    "position": "G",
+    "seed": null,
+    "rank": 299
+  },
+  {
+    "name": "Chris Youngblood",
+    "teamAbbr": "POR",
+    "position": "G",
+    "seed": null,
+    "rank": 300
+  },
+  {
+    "name": "Mason Plumlee",
+    "teamAbbr": "SAS",
+    "position": "F",
+    "seed": null,
+    "rank": 301
+  },
+  {
+    "name": "Tolu Smith",
+    "teamAbbr": "DET",
+    "position": "F",
+    "seed": null,
+    "rank": 302
+  },
+  {
+    "name": "MarJon Beauchamp",
+    "teamAbbr": "PHI",
+    "position": "F",
+    "seed": null,
+    "rank": 303
+  },
+  {
+    "name": "Olivier Sarr",
+    "teamAbbr": "CLE",
+    "position": "C",
+    "seed": null,
+    "rank": 304
+  },
+  {
+    "name": "Johni Broome",
+    "teamAbbr": "PHI",
+    "position": "F",
+    "seed": null,
+    "rank": 305
+  },
+  {
+    "name": "Tyus Jones",
+    "teamAbbr": "DEN",
+    "position": "G",
+    "seed": null,
+    "rank": 306
+  },
+  {
+    "name": "Kristaps Porziņģis",
+    "teamAbbr": "GSW",
+    "position": "F",
+    "seed": null,
+    "rank": 307
+  },
+  {
+    "name": "CJ Huntley",
+    "teamAbbr": "PHO",
+    "position": "F",
+    "seed": null,
+    "rank": 308
+  },
+  {
+    "name": "Max Shulga",
+    "teamAbbr": "BOS",
+    "position": "G",
+    "seed": null,
+    "rank": 309
+  },
+  {
+    "name": "Tony Bradley",
+    "teamAbbr": "ATL",
+    "position": "C",
+    "seed": null,
+    "rank": 310
+  },
+  {
+    "name": "Tosan Evbuomwan",
+    "teamAbbr": "CHA",
+    "position": "F",
+    "seed": null,
+    "rank": 311
+  },
+  {
+    "name": "David Jones Garcia",
+    "teamAbbr": "SAS",
+    "position": "G",
+    "seed": null,
+    "rank": 312
+  },
+  {
+    "name": "Kyle Lowry",
+    "teamAbbr": "PHI",
+    "position": "G",
+    "seed": null,
+    "rank": 313
+  },
+  {
+    "name": "Antonio Reeves",
+    "teamAbbr": "CHA",
+    "position": "G",
+    "seed": null,
+    "rank": 314
+  },
+  {
+    "name": "Colin Castleton",
+    "teamAbbr": "ORL",
+    "position": "C",
+    "seed": null,
+    "rank": 315
+  },
+  {
+    "name": "Dalen Terry",
+    "teamAbbr": "PHI",
+    "position": "F",
+    "seed": null,
+    "rank": 316
+  },
+  {
+    "name": "Nate Williams",
+    "teamAbbr": "GSW",
+    "position": "G",
+    "seed": null,
+    "rank": 317
+  },
+  {
+    "name": "Damian Lillard",
+    "teamAbbr": "POR",
+    "position": "G",
+    "seed": null,
+    "rank": 318
+  },
+  {
+    "name": "Riley Minix",
+    "teamAbbr": "CLE",
+    "position": "F",
+    "seed": null,
+    "rank": 319
+  },
+  {
+    "name": "Enrique Freeman",
+    "teamAbbr": "MIN",
+    "position": "F",
+    "seed": null,
+    "rank": 320
+  },
+  {
+    "name": "Sean Pedulla",
+    "teamAbbr": "LAC",
+    "position": "G",
+    "seed": null,
+    "rank": 321
+  },
+  {
+    "name": "Keshon Gilbert",
+    "teamAbbr": "ATL",
+    "position": "G",
+    "seed": null,
+    "rank": 322
+  },
+  {
+    "name": "Bradley Beal",
+    "teamAbbr": "LAC",
+    "position": "G",
+    "seed": null,
+    "rank": 323
+  },
+  {
+    "name": "Julian Phillips",
+    "teamAbbr": "MIN",
+    "position": "F",
+    "seed": null,
+    "rank": 324
+  },
+  {
+    "name": "Payton Sandfort",
+    "teamAbbr": "OKC",
+    "position": "F",
+    "seed": null,
+    "rank": 325
+  },
+  {
+    "name": "Tristen Newton",
+    "teamAbbr": "HOU",
+    "position": "G",
+    "seed": null,
+    "rank": 326
+  },
+  {
+    "name": "Haywood Highsmith",
+    "teamAbbr": "PHO",
+    "position": "F",
+    "seed": null,
+    "rank": 327
+  },
+  {
+    "name": "Buddy Hield",
+    "teamAbbr": "ATL",
+    "position": "G",
+    "seed": null,
+    "rank": 328
+  },
+  {
+    "name": "Dillon Jones",
+    "teamAbbr": "NYK",
+    "position": "F",
+    "seed": null,
+    "rank": 329
+  },
+  {
+    "name": "Emanuel Miller",
+    "teamAbbr": "SAS",
+    "position": "F",
+    "seed": null,
+    "rank": 330
+  },
+  {
+    "name": "Christian Koloko",
+    "teamAbbr": "ATL",
+    "position": "C",
+    "seed": null,
+    "rank": 331
+  },
+  {
+    "name": "Wendell Moore",
+    "teamAbbr": "DET",
+    "position": "G",
+    "seed": null,
+    "rank": 332
+  },
+  {
+    "name": "Curtis Jones",
+    "teamAbbr": "DEN",
+    "position": "G",
+    "seed": null,
+    "rank": 333
+  },
+  {
+    "name": "Koby Brea",
+    "teamAbbr": "PHO",
+    "position": "G",
+    "seed": null,
+    "rank": 334
+  }
 ]

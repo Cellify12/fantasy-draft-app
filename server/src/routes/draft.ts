@@ -24,10 +24,10 @@ router.get('/', (_req, res) => {
   `).all();
 
   const availablePlayers = db.prepare(`
-    SELECT id, name, team_abbr as teamAbbr, position, seed
+    SELECT id, name, team_abbr as teamAbbr, position, seed, rank
     FROM players
     WHERE id NOT IN (SELECT player_id FROM picks)
-    ORDER BY seed ASC, team_abbr ASC, name ASC
+    ORDER BY rank ASC, name ASC
   `).all();
 
   res.json({

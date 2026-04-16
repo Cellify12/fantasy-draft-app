@@ -6,7 +6,7 @@ const router = Router();
 router.get('/', (req, res) => {
   const { available, search } = req.query;
 
-  let sql = 'SELECT id, name, team_abbr as teamAbbr, position, seed FROM players';
+  let sql = 'SELECT id, name, team_abbr as teamAbbr, position, seed, rank FROM players';
   const conditions: string[] = [];
   const params: unknown[] = [];
 
@@ -23,7 +23,7 @@ router.get('/', (req, res) => {
     sql += ' WHERE ' + conditions.join(' AND ');
   }
 
-  sql += ' ORDER BY seed ASC, team_abbr ASC, name ASC';
+  sql += ' ORDER BY rank ASC, name ASC';
 
   const players = db.prepare(sql).all(...params);
   res.json(players);

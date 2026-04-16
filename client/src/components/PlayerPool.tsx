@@ -18,11 +18,16 @@ export default function PlayerPool({ players, draggable }: PlayerPoolProps) {
       )
     : players;
 
-  // Group by NBA team
+  // Group by NBA team, sort players by rank within each team
   const grouped = filtered.reduce<Record<string, Player[]>>((acc, p) => {
     (acc[p.teamAbbr] ??= []).push(p);
     return acc;
   }, {});
+
+  // Sort players within each team by rank
+  for (const team of Object.keys(grouped)) {
+    grouped[team].sort((a, b) => (a.rank ?? 999) - (b.rank ?? 999));
+  }
 
   function handleDragStart(e: React.DragEvent, player: Player) {
     e.dataTransfer.setData('application/json', JSON.stringify(player));
@@ -54,7 +59,7 @@ export default function PlayerPool({ players, draggable }: PlayerPoolProps) {
             {Object.entries(grouped).sort().map(([team, teamPlayers]) => (
               <div key={team}>
                 <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
-                  {team}
+                  {team} ({teamPlayers.length})
                 </div>
                 <div className="space-y-0.5">
                   {teamPlayers.map(p => (
@@ -66,7 +71,8 @@ export default function PlayerPool({ players, draggable }: PlayerPoolProps) {
                         draggable ? 'cursor-grab active:cursor-grabbing hover:bg-slate-700 select-none' : ''
                       }`}
                     >
-                      <span className="text-slate-500 w-8">{p.position}</span>
+                      <span className="text-slate-600 w-7 text-right shrink-0">#{p.rank}</span>
+                      <span className="text-slate-500 w-6 shrink-0">{p.position}</span>
                       <span>{p.name}</span>
                       {draggable && (
                         <span className="ml-auto text-slate-600 text-xs">drag</span>

@@ -10,6 +10,7 @@ interface PlayerData {
   teamAbbr: string;
   position: string;
   seed: number | null;
+  rank: number | null;
 }
 
 export function seedDatabase() {
@@ -32,11 +33,11 @@ export function seedDatabase() {
     const players: PlayerData[] = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 
     const insertPlayer = db.prepare(
-      'INSERT OR IGNORE INTO players (name, team_abbr, position, seed) VALUES (?, ?, ?, ?)'
+      'INSERT OR IGNORE INTO players (name, team_abbr, position, seed, rank) VALUES (?, ?, ?, ?, ?)'
     );
     const insertMany = db.transaction((items: PlayerData[]) => {
       for (const p of items) {
-        insertPlayer.run(p.name, p.teamAbbr, p.position, p.seed);
+        insertPlayer.run(p.name, p.teamAbbr, p.position, p.seed, p.rank ?? null);
       }
     });
     insertMany(players);

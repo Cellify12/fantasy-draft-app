@@ -25,6 +25,7 @@ db.exec(`
     team_abbr TEXT NOT NULL,
     position  TEXT NOT NULL,
     seed      INTEGER,
+    rank      INTEGER,
     UNIQUE(name, team_abbr)
   );
 

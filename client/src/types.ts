@@ -4,6 +4,7 @@ export interface Player {
   teamAbbr: string;
   position: string;
   seed: number | null;
+  rank: number | null;
 }
 
 export interface Pick {
