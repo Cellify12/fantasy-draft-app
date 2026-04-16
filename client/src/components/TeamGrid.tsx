@@ -1,0 +1,17 @@
+import type { Team, Player } from '../types';
+import TeamColumn from './TeamColumn';
+
+interface TeamGridProps {
+  teams: Team[];
+  onDrop?: (player: Player, team: Team) => void;
+}
+
+export default function TeamGrid({ teams, onDrop }: TeamGridProps) {
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {teams.map((team, i) => (
+        <TeamColumn key={team.id} team={team} index={i} onDrop={onDrop} />
+      ))}
+    </div>
+  );
+}

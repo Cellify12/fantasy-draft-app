@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: fantasy-draft-app
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_PATH
+        value: /var/data/draft.db
+    disk:
+      name: data
+      mountPath: /var/data
+      sizeGB: 1
