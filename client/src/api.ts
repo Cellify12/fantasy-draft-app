@@ -51,3 +51,9 @@ export async function resetDraft() {
   if (!res.ok) throw new Error('Failed to reset draft');
   return res.json();
 }
+
+export async function getEmailResults(to?: string): Promise<{ mailtoUrl: string; results: string }> {
+  const res = await fetch(`${BASE}/email/mailto?to=${encodeURIComponent(to || '')}`);
+  if (!res.ok) throw new Error('Failed to get email results');
+  return res.json();
+}

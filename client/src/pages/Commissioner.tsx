@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { fetchDraft, createPick, deletePick, updateTeam, resetDraft } from '../api';
-import type { Player, Team } from '../types';
+import type { Player, Team, Pick } from '../types';
 import TeamGrid from '../components/TeamGrid';
 import PlayerSearch from '../components/PlayerSearch';
 import PlayerPool from '../components/PlayerPool';
 import BidModal from '../components/BidModal';
 import VoiceControl from '../components/VoiceControl';
+import EmailResults from '../components/EmailResults';
 
 const ROSTER_SIZE = 9;
 
@@ -98,6 +99,13 @@ export default function Commissioner() {
   function handleReset() {
     if (confirm('Reset the entire draft? This will remove all picks.')) {
       resetMutation.mutate();
+    }
+  }
+
+  // Remove any pick (not just the last)
+  function handleRemovePick(pick: Pick) {
+    if (confirm(`Remove ${pick.playerName} ($${pick.bidAmount}) from the draft?`)) {
+      undoMutation.mutate(pick.id);
     }
   }
 
@@ -212,6 +220,7 @@ export default function Commissioner() {
           <span className="text-lg text-slate-400">
             {data.picks.length} picks · {data.availablePlayers.length} available
           </span>
+          <EmailResults />
           <button
             onClick={handleReset}
             className="text-sm text-red-400 hover:text-red-300 transition-colors"
@@ -221,7 +230,7 @@ export default function Commissioner() {
         </div>
       </div>
 
-      <TeamGrid teams={data.teams} onDrop={handleDrop} />
+      <TeamGrid teams={data.teams} onDrop={handleDrop} onRemovePick={handleRemovePick} />
       <PlayerPool players={data.availablePlayers} draggable />
 
       {/* Team Name Editor — at the bottom */}

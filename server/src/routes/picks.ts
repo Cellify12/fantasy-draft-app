@@ -1,6 +1,8 @@
 import { Router } from 'express';
 import db from '../db.js';
 
+const ROSTER_SIZE = 9;
+
 const router = Router();
 
 router.get('/', (_req, res) => {
@@ -27,6 +29,13 @@ router.post('/', (req, res) => {
   const existing = db.prepare('SELECT id FROM picks WHERE player_id = ?').get(playerId);
   if (existing) {
     res.status(400).json({ error: 'Player already drafted' });
+    return;
+  }
+
+  // Check roster limit
+  const rosterCount = db.prepare('SELECT COUNT(*) as count FROM picks WHERE team_id = ?').get(teamId) as { count: number };
+  if (rosterCount.count >= ROSTER_SIZE) {
+    res.status(400).json({ error: `Roster full (${ROSTER_SIZE}/${ROSTER_SIZE}). Cannot add more players.` });
     return;
   }
 
@@ -69,14 +78,13 @@ router.post('/', (req, res) => {
   res.status(201).json(pick);
 });
 
+// Delete ANY pick (not just the last one)
 router.delete('/:id', (req, res) => {
   const { id } = req.params;
 
-  // Only allow deleting the most recent pick
-  const lastPick = db.prepare('SELECT id FROM picks ORDER BY pick_order DESC LIMIT 1').get() as { id: number } | undefined;
-
-  if (!lastPick || lastPick.id !== Number(id)) {
-    res.status(400).json({ error: 'Can only undo the most recent pick' });
+  const pick = db.prepare('SELECT id FROM picks WHERE id = ?').get(Number(id));
+  if (!pick) {
+    res.status(404).json({ error: 'Pick not found' });
     return;
   }
 

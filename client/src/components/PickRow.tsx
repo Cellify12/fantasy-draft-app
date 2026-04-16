@@ -2,11 +2,12 @@ import type { Pick } from '../types';
 
 interface PickRowProps {
   pick: Pick;
+  onRemove?: (pick: Pick) => void;
 }
 
-export default function PickRow({ pick }: PickRowProps) {
+export default function PickRow({ pick, onRemove }: PickRowProps) {
   return (
-    <div className="flex items-center justify-between py-2 px-4 text-lg border-b border-slate-700/50 last:border-0">
+    <div className="flex items-center justify-between py-2 px-4 text-lg border-b border-slate-700/50 last:border-0 group">
       <div className="flex items-center gap-3 min-w-0">
         <span className="text-slate-500 text-base w-7 shrink-0">#{pick.pickOrder}</span>
         <span className="text-white font-bold truncate">{pick.playerName}</span>
@@ -14,7 +15,18 @@ export default function PickRow({ pick }: PickRowProps) {
           {pick.playerPosition} · {pick.playerTeamAbbr}
         </span>
       </div>
-      <span className="text-emerald-400 font-mono text-xl font-bold shrink-0 ml-3">${pick.bidAmount}</span>
+      <div className="flex items-center gap-2 shrink-0 ml-3">
+        <span className="text-emerald-400 font-mono text-xl font-bold">${pick.bidAmount}</span>
+        {onRemove && (
+          <button
+            onClick={() => onRemove(pick)}
+            className="opacity-0 group-hover:opacity-100 text-red-400 hover:text-red-300 text-sm px-1.5 py-0.5 rounded hover:bg-red-400/10 transition-all"
+            title="Remove pick"
+          >
+            ✕
+          </button>
+        )}
+      </div>
     </div>
   );
 }
