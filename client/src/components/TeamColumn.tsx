@@ -68,23 +68,23 @@ export default function TeamColumn({ team, index, onDrop }: TeamColumnProps) {
       onDragOver={handleDragOver}
       onDragLeave={handleDragLeave}
       onDrop={handleDrop}
-      className={`bg-slate-800 rounded-lg border-t-2 ${borderColor} overflow-hidden transition-all ${
+      className={`bg-slate-800 rounded-xl border-t-4 ${borderColor} overflow-hidden transition-all ${
         dragOver ? `ring-2 ${dragColor} scale-[1.02] bg-slate-750` : ''
       }`}
     >
-      <div className="p-3">
-        <h3 className={`font-bold text-lg ${textColor} mb-1 truncate`}>{team.name}</h3>
+      <div className="p-4">
+        <h3 className={`font-bold text-2xl ${textColor} mb-2 truncate`}>{team.name}</h3>
         <BudgetBar budget={team.budget} spent={team.spent} remaining={team.remaining} />
-        <div className="text-xs text-slate-500">{team.picks.length} players</div>
+        <div className="text-base text-slate-500">{team.picks.length} players</div>
       </div>
       {dragOver && (
-        <div className="text-center text-sm text-slate-400 py-2 bg-slate-700/50 border-t border-slate-700">
+        <div className="text-center text-lg text-slate-400 py-3 bg-slate-700/50 border-t border-slate-700">
           Drop here to draft
         </div>
       )}
-      <div className="max-h-60 overflow-y-auto">
+      <div className="max-h-[50vh] overflow-y-auto">
         {team.picks.length === 0 && !dragOver ? (
-          <div className="text-slate-600 text-sm text-center py-4 italic">No picks yet</div>
+          <div className="text-slate-600 text-xl text-center py-8 italic">No picks yet</div>
         ) : (
           team.picks.map(pick => <PickRow key={pick.id} pick={pick} />)
         )}
