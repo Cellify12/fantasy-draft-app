@@ -3,31 +3,13 @@ import type { Team, Player } from '../types';
 import BudgetBar from './BudgetBar';
 import PickRow from './PickRow';
 
-const TEAM_COLORS = [
-  'border-blue-500',
-  'border-red-500',
-  'border-emerald-500',
-  'border-amber-500',
-  'border-purple-500',
-  'border-pink-500',
-];
-
-const TEAM_TEXT_COLORS = [
-  'text-blue-400',
-  'text-red-400',
-  'text-emerald-400',
-  'text-amber-400',
-  'text-purple-400',
-  'text-pink-400',
-];
-
-const TEAM_DRAG_COLORS = [
-  'ring-blue-500',
-  'ring-red-500',
-  'ring-emerald-500',
-  'ring-amber-500',
-  'ring-purple-500',
-  'ring-pink-500',
+const TEAM_STYLES = [
+  { border: 'border-blue-400',    bg: 'bg-blue-950',    header: 'bg-blue-600',    text: 'text-white', ring: 'ring-blue-400'    },
+  { border: 'border-red-400',     bg: 'bg-red-950',     header: 'bg-red-600',     text: 'text-white', ring: 'ring-red-400'     },
+  { border: 'border-emerald-400', bg: 'bg-emerald-950', header: 'bg-emerald-600', text: 'text-white', ring: 'ring-emerald-400' },
+  { border: 'border-amber-400',   bg: 'bg-amber-950',   header: 'bg-amber-500',   text: 'text-black', ring: 'ring-amber-400'   },
+  { border: 'border-purple-400',  bg: 'bg-purple-950',  header: 'bg-purple-600',  text: 'text-white', ring: 'ring-purple-400'  },
+  { border: 'border-pink-400',    bg: 'bg-pink-950',    header: 'bg-pink-600',    text: 'text-white', ring: 'ring-pink-400'    },
 ];
 
 interface TeamColumnProps {
@@ -38,9 +20,7 @@ interface TeamColumnProps {
 
 export default function TeamColumn({ team, index, onDrop }: TeamColumnProps) {
   const [dragOver, setDragOver] = useState(false);
-  const borderColor = TEAM_COLORS[index % TEAM_COLORS.length];
-  const textColor = TEAM_TEXT_COLORS[index % TEAM_TEXT_COLORS.length];
-  const dragColor = TEAM_DRAG_COLORS[index % TEAM_DRAG_COLORS.length];
+  const style = TEAM_STYLES[index % TEAM_STYLES.length];
 
   function handleDragOver(e: React.DragEvent) {
     if (!onDrop) return;
@@ -68,14 +48,19 @@ export default function TeamColumn({ team, index, onDrop }: TeamColumnProps) {
       onDragOver={handleDragOver}
       onDragLeave={handleDragLeave}
       onDrop={handleDrop}
-      className={`bg-slate-800 rounded-xl border-t-4 ${borderColor} overflow-hidden transition-all ${
-        dragOver ? `ring-2 ${dragColor} scale-[1.02] bg-slate-750` : ''
+      className={`rounded-xl border-2 ${style.border} ${style.bg} overflow-hidden transition-all ${
+        dragOver ? `ring-4 ${style.ring} scale-[1.02]` : ''
       }`}
     >
+      {/* Bold colored header banner */}
+      <div className={`${style.header} px-4 py-3`}>
+        <h3 className={`font-extrabold text-3xl ${style.text} truncate`}>{team.name}</h3>
+      </div>
+
       <div className="p-4">
-        <h3 className={`font-bold text-2xl ${textColor} mb-2 truncate`}>{team.name}</h3>
         <BudgetBar budget={team.budget} spent={team.spent} remaining={team.remaining} pickCount={team.picks.length} />
       </div>
+
       {dragOver && (
         <div className="text-center text-lg text-slate-400 py-3 bg-slate-700/50 border-t border-slate-700">
           Drop here to draft
