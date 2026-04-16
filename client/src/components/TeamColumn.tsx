@@ -74,8 +74,7 @@ export default function TeamColumn({ team, index, onDrop }: TeamColumnProps) {
     >
       <div className="p-4">
         <h3 className={`font-bold text-2xl ${textColor} mb-2 truncate`}>{team.name}</h3>
-        <BudgetBar budget={team.budget} spent={team.spent} remaining={team.remaining} />
-        <div className="text-base text-slate-500">{team.picks.length} players</div>
+        <BudgetBar budget={team.budget} spent={team.spent} remaining={team.remaining} pickCount={team.picks.length} />
       </div>
       {dragOver && (
         <div className="text-center text-lg text-slate-400 py-3 bg-slate-700/50 border-t border-slate-700">

@@ -8,6 +8,13 @@ import PlayerPool from '../components/PlayerPool';
 import BidModal from '../components/BidModal';
 import VoiceControl from '../components/VoiceControl';
 
+const ROSTER_SIZE = 9;
+
+function getMaxBid(team: Team): number {
+  const emptySlots = ROSTER_SIZE - team.picks.length;
+  return emptySlots > 0 ? Math.max(team.remaining - (emptySlots - 1), 0) : 0;
+}
+
 export default function Commissioner() {
   const queryClient = useQueryClient();
   const [selectedPlayer, setSelectedPlayer] = useState<Player | null>(null);
@@ -114,11 +121,13 @@ export default function Commissioner() {
   }
 
   if (isLoading || !data) {
-    return <div className="text-slate-400 text-center py-20">Loading...</div>;
+    return <div className="text-slate-400 text-center text-2xl py-20">Loading...</div>;
   }
 
+  const selectedTeam = data.teams.find(t => t.id === selectedTeamId);
+
   return (
-    <div className="max-w-7xl mx-auto px-4 py-6">
+    <div className="px-4 py-6">
       {/* Voice Control */}
       <VoiceControl
         players={data.availablePlayers}
@@ -127,12 +136,12 @@ export default function Commissioner() {
       />
 
       {/* Commissioner Control Panel */}
-      <div className="bg-slate-800 rounded-lg p-4 mb-6 border border-slate-700">
-        <h2 className="text-lg font-bold text-white mb-4">Commissioner Panel</h2>
+      <div className="bg-slate-800 rounded-xl p-6 mb-6 border border-slate-700">
+        <h2 className="text-2xl font-bold text-white mb-5">Commissioner Panel</h2>
 
-        <form onSubmit={handleDraft} className="space-y-3">
+        <form onSubmit={handleDraft} className="space-y-4">
           <div>
-            <label className="block text-sm text-slate-400 mb-1">Player</label>
+            <label className="block text-lg text-slate-400 mb-2">Player</label>
             <PlayerSearch
               selectedPlayer={selectedPlayer}
               onSelect={setSelectedPlayer}
@@ -140,45 +149,53 @@ export default function Commissioner() {
             />
           </div>
 
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm text-slate-400 mb-1">Team</label>
+              <label className="block text-lg text-slate-400 mb-2">Team</label>
               <select
                 value={selectedTeamId}
                 onChange={e => setSelectedTeamId(Number(e.target.value))}
-                className="w-full px-3 py-2 bg-slate-900 border border-slate-600 rounded text-white focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-lg text-lg text-white focus:outline-none focus:border-blue-500"
               >
                 {data.teams.map(team => (
                   <option key={team.id} value={team.id}>
-                    {team.name} (${team.remaining} left)
+                    {team.name} — Max Bid: ${getMaxBid(team)} ({team.picks.length}/{ROSTER_SIZE})
                   </option>
                 ))}
               </select>
             </div>
             <div>
-              <label className="block text-sm text-slate-400 mb-1">Bid Amount ($)</label>
+              <label className="block text-lg text-slate-400 mb-2">
+                Bid Amount ($)
+                {selectedTeam && (
+                  <span className="text-yellow-400 ml-2">
+                    Max: ${getMaxBid(selectedTeam)}
+                  </span>
+                )}
+              </label>
               <input
                 type="number"
                 min="1"
+                max={selectedTeam ? getMaxBid(selectedTeam) : undefined}
                 value={bidAmount}
                 onChange={e => setBidAmount(e.target.value)}
                 placeholder="0"
-                className="w-full px-3 py-2 bg-slate-900 border border-slate-600 rounded text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-lg text-lg text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
               />
             </div>
           </div>
 
           {error && (
-            <div className="text-red-400 text-sm bg-red-400/10 border border-red-400/20 rounded px-3 py-2">
+            <div className="text-red-400 text-lg bg-red-400/10 border border-red-400/20 rounded-lg px-4 py-3">
               {error}
             </div>
           )}
 
-          <div className="flex gap-2">
+          <div className="flex gap-3">
             <button
               type="submit"
               disabled={pickMutation.isPending}
-              className="flex-1 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-800 disabled:text-blue-400 text-white font-medium py-2 px-4 rounded transition-colors"
+              className="flex-1 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-800 disabled:text-blue-400 text-white text-xl font-bold py-3 px-6 rounded-lg transition-colors"
             >
               {pickMutation.isPending ? 'Drafting...' : 'Draft Player'}
             </button>
@@ -186,7 +203,7 @@ export default function Commissioner() {
               type="button"
               onClick={handleUndo}
               disabled={data.picks.length === 0}
-              className="bg-amber-600 hover:bg-amber-700 disabled:bg-slate-700 disabled:text-slate-500 text-white font-medium py-2 px-4 rounded transition-colors"
+              className="bg-amber-600 hover:bg-amber-700 disabled:bg-slate-700 disabled:text-slate-500 text-white text-xl font-bold py-3 px-6 rounded-lg transition-colors"
             >
               Undo
             </button>
@@ -195,9 +212,9 @@ export default function Commissioner() {
       </div>
 
       {/* Team Name Editor */}
-      <div className="bg-slate-800 rounded-lg p-4 mb-6 border border-slate-700">
-        <h3 className="text-sm font-semibold text-slate-400 mb-3">Team Names (click to edit)</h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+      <div className="bg-slate-800 rounded-xl p-5 mb-6 border border-slate-700">
+        <h3 className="text-lg font-semibold text-slate-400 mb-3">Team Names (click to edit)</h3>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
           {data.teams.map(team => (
             <div key={team.id}>
               {editingTeam === team.id ? (
@@ -219,7 +236,7 @@ export default function Commissioner() {
                       setEditingTeam(null);
                     }
                   }}
-                  className="w-full px-2 py-1 bg-slate-900 border border-blue-500 rounded text-white text-sm focus:outline-none"
+                  className="w-full px-3 py-2 bg-slate-900 border border-blue-500 rounded-lg text-white text-lg focus:outline-none"
                 />
               ) : (
                 <button
@@ -227,7 +244,7 @@ export default function Commissioner() {
                     setEditingTeam(team.id);
                     setEditName(team.name);
                   }}
-                  className="w-full text-left px-2 py-1 text-sm text-slate-300 hover:text-white hover:bg-slate-700 rounded transition-colors"
+                  className="w-full text-left px-3 py-2 text-lg text-slate-300 hover:text-white hover:bg-slate-700 rounded-lg transition-colors"
                 >
                   {team.name}
                 </button>
@@ -238,15 +255,15 @@ export default function Commissioner() {
       </div>
 
       {/* Draft Board — drop targets enabled */}
-      <div className="flex items-center justify-between mb-4">
-        <h2 className="text-lg font-bold text-white">Draft Board</h2>
+      <div className="flex items-center justify-between mb-5">
+        <h2 className="text-2xl font-bold text-white">Draft Board</h2>
         <div className="flex items-center gap-4">
-          <span className="text-sm text-slate-400">
+          <span className="text-lg text-slate-400">
             {data.picks.length} picks · {data.availablePlayers.length} available
           </span>
           <button
             onClick={handleReset}
-            className="text-xs text-red-400 hover:text-red-300 transition-colors"
+            className="text-base text-red-400 hover:text-red-300 transition-colors"
           >
             Reset Draft
           </button>
