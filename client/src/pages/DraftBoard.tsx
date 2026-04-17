@@ -28,14 +28,14 @@ export default function DraftBoard() {
   }
 
   return (
-    <div className="px-4 py-6">
-      <div className="flex items-center justify-between mb-5">
-        <h2 className="text-2xl font-bold text-white">
+    <div className="px-4 py-2">
+      <div className="flex items-center justify-between mb-2">
+        <h2 className="text-lg font-bold text-white">
           Draft Board
         </h2>
-        <div className="flex items-center gap-4">
-          <span className="text-lg text-slate-400">
-            {data.picks.length} picks made · {data.availablePlayers.length} players available
+        <div className="flex items-center gap-3">
+          <span className="text-sm text-slate-400">
+            {data.picks.length} picks · {data.availablePlayers.length} available
           </span>
           <EmailResults />
         </div>

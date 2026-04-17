@@ -57,25 +57,25 @@ export default function TeamColumn({ team, index, onDrop, onRemovePick }: TeamCo
       } ${rosterFull ? 'opacity-75' : ''}`}
     >
       {/* Bold colored header banner */}
-      <div className={`${style.header} px-4 py-3 flex items-center justify-between`}>
-        <h3 className={`font-extrabold text-3xl ${style.text} truncate`}>{team.name}</h3>
+      <div className={`${style.header} px-3 py-2 flex items-center justify-between`}>
+        <h3 className={`font-extrabold text-2xl ${style.text} truncate`}>{team.name}</h3>
         {rosterFull && (
-          <span className={`text-sm font-bold ${style.text} bg-black/20 px-2 py-0.5 rounded`}>FULL</span>
+          <span className={`text-xs font-bold ${style.text} bg-black/20 px-2 py-0.5 rounded`}>FULL</span>
         )}
       </div>
 
-      <div className="p-4">
+      <div className="px-3 py-2">
         <BudgetBar budget={team.budget} spent={team.spent} remaining={team.remaining} pickCount={team.picks.length} />
       </div>
 
       {dragOver && !rosterFull && (
-        <div className="text-center text-lg text-slate-400 py-3 bg-slate-700/50 border-t border-slate-700">
+        <div className="text-center text-sm text-slate-400 py-2 bg-slate-700/50 border-t border-slate-700">
           Drop here to draft
         </div>
       )}
-      <div className="max-h-[50vh] overflow-y-auto">
+      <div>
         {team.picks.length === 0 && !dragOver ? (
-          <div className="text-slate-600 text-xl text-center py-8 italic">No picks yet</div>
+          <div className="text-slate-600 text-lg text-center py-6 italic">No picks yet</div>
         ) : (
           team.picks.map(pick => (
             <PickRow key={pick.id} pick={pick} onRemove={onRemovePick} />

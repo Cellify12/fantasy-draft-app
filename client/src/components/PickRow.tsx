@@ -7,16 +7,16 @@ interface PickRowProps {
 
 export default function PickRow({ pick, onRemove }: PickRowProps) {
   return (
-    <div className="flex items-center justify-between py-2 px-4 text-lg border-b border-slate-700/50 last:border-0 group">
-      <div className="flex items-center gap-3 min-w-0">
-        <span className="text-slate-500 text-base w-7 shrink-0">#{pick.pickOrder}</span>
+    <div className="flex items-center justify-between py-1.5 px-3 text-base border-b border-slate-700/50 last:border-0 group">
+      <div className="flex items-center gap-2 min-w-0">
+        <span className="text-slate-500 text-sm w-6 shrink-0">#{pick.pickOrder}</span>
         <span className="text-white font-bold truncate">{pick.playerName}</span>
-        <span className="text-slate-400 text-base shrink-0">
+        <span className="text-slate-400 text-sm shrink-0">
           {pick.playerPosition} · {pick.playerTeamAbbr}
         </span>
       </div>
-      <div className="flex items-center gap-2 shrink-0 ml-3">
-        <span className="text-emerald-400 font-mono text-xl font-bold">${pick.bidAmount}</span>
+      <div className="flex items-center gap-2 shrink-0 ml-2">
+        <span className="text-emerald-400 font-mono text-lg font-bold">${pick.bidAmount}</span>
         {onRemove && (
           <button
             onClick={() => onRemove(pick)}

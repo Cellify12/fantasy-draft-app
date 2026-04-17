@@ -133,14 +133,14 @@ export default function Commissioner() {
   const selectedTeam = data.teams.find(t => t.id === selectedTeamId);
 
   return (
-    <div className="px-4 py-4">
+    <div className="px-4 py-2">
       {/* Compact Commissioner Control Panel */}
-      <div className="bg-slate-800 rounded-lg p-3 mb-4 border border-slate-700">
+      <div className="bg-slate-800 rounded-lg p-2 mb-3 border border-slate-700">
         <form onSubmit={handleDraft}>
-          <div className="flex items-end gap-3 flex-wrap">
+          <div className="flex items-end gap-2 flex-wrap">
             {/* Player search */}
-            <div className="flex-1 min-w-[200px]">
-              <label className="block text-xs text-slate-400 mb-1">Player</label>
+            <div className="flex-1 min-w-[180px]">
+              <label className="block text-xs text-slate-400 mb-0.5">Player</label>
               <PlayerSearch
                 selectedPlayer={selectedPlayer}
                 onSelect={setSelectedPlayer}
@@ -149,12 +149,12 @@ export default function Commissioner() {
             </div>
 
             {/* Team select */}
-            <div className="w-64">
-              <label className="block text-xs text-slate-400 mb-1">Team</label>
+            <div className="w-56">
+              <label className="block text-xs text-slate-400 mb-0.5">Team</label>
               <select
                 value={selectedTeamId}
                 onChange={e => setSelectedTeamId(Number(e.target.value))}
-                className="w-full px-3 py-2 bg-slate-900 border border-slate-600 rounded text-sm text-white focus:outline-none focus:border-blue-500"
+                className="w-full px-2 py-1.5 bg-slate-900 border border-slate-600 rounded text-sm text-white focus:outline-none focus:border-blue-500"
               >
                 {data.teams.map(team => (
                   <option key={team.id} value={team.id}>
@@ -165,8 +165,8 @@ export default function Commissioner() {
             </div>
 
             {/* Bid amount */}
-            <div className="w-32">
-              <label className="block text-xs text-slate-400 mb-1">
+            <div className="w-28">
+              <label className="block text-xs text-slate-400 mb-0.5">
                 Bid {selectedTeam && <span className="text-yellow-400">(max ${getMaxBid(selectedTeam)})</span>}
               </label>
               <input
@@ -176,7 +176,7 @@ export default function Commissioner() {
                 value={bidAmount}
                 onChange={e => setBidAmount(e.target.value)}
                 placeholder="$"
-                className="w-full px-3 py-2 bg-slate-900 border border-slate-600 rounded text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
+                className="w-full px-2 py-1.5 bg-slate-900 border border-slate-600 rounded text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500"
               />
             </div>
 
@@ -184,7 +184,7 @@ export default function Commissioner() {
             <button
               type="submit"
               disabled={pickMutation.isPending}
-              className="bg-blue-600 hover:bg-blue-700 disabled:bg-blue-800 disabled:text-blue-400 text-white font-bold py-2 px-5 rounded transition-colors"
+              className="bg-blue-600 hover:bg-blue-700 disabled:bg-blue-800 disabled:text-blue-400 text-white text-sm font-bold py-1.5 px-4 rounded transition-colors"
             >
               {pickMutation.isPending ? 'Drafting...' : 'Draft'}
             </button>
@@ -192,7 +192,7 @@ export default function Commissioner() {
               type="button"
               onClick={handleUndo}
               disabled={data.picks.length === 0}
-              className="bg-amber-600 hover:bg-amber-700 disabled:bg-slate-700 disabled:text-slate-500 text-white font-bold py-2 px-4 rounded transition-colors"
+              className="bg-amber-600 hover:bg-amber-700 disabled:bg-slate-700 disabled:text-slate-500 text-white text-sm font-bold py-1.5 px-3 rounded transition-colors"
             >
               Undo
             </button>
@@ -206,7 +206,7 @@ export default function Commissioner() {
           </div>
 
           {error && (
-            <div className="text-red-400 text-sm bg-red-400/10 border border-red-400/20 rounded px-3 py-2 mt-2">
+            <div className="text-red-400 text-xs bg-red-400/10 border border-red-400/20 rounded px-2 py-1 mt-1">
               {error}
             </div>
           )}
@@ -214,16 +214,16 @@ export default function Commissioner() {
       </div>
 
       {/* Draft Board — BIG */}
-      <div className="flex items-center justify-between mb-5">
-        <h2 className="text-2xl font-bold text-white">Draft Board</h2>
-        <div className="flex items-center gap-4">
-          <span className="text-lg text-slate-400">
+      <div className="flex items-center justify-between mb-2">
+        <h2 className="text-lg font-bold text-white">Draft Board</h2>
+        <div className="flex items-center gap-3">
+          <span className="text-sm text-slate-400">
             {data.picks.length} picks · {data.availablePlayers.length} available
           </span>
           <EmailResults />
           <button
             onClick={handleReset}
-            className="text-sm text-red-400 hover:text-red-300 transition-colors"
+            className="text-xs text-red-400 hover:text-red-300 transition-colors"
           >
             Reset Draft
           </button>
