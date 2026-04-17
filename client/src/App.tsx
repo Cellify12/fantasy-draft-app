@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Header from './components/Header';
+import PasswordGate from './components/PasswordGate';
 import DraftBoard from './pages/DraftBoard';
 import Commissioner from './pages/Commissioner';
 
@@ -20,7 +21,7 @@ export default function App() {
           <Header />
           <Routes>
             <Route path="/" element={<DraftBoard />} />
-            <Route path="/commissioner" element={<Commissioner />} />
+            <Route path="/commissioner" element={<PasswordGate><Commissioner /></PasswordGate>} />
           </Routes>
         </div>
       </BrowserRouter>
